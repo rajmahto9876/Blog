@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-04-25T09:53:22+05:30</updated>
+  <updated>2026-04-27T12:33:33+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/</uri>
@@ -108,7 +108,7 @@
     
   
 
-  <summary>Hi, I’m Your Raj Kumar Mahto 👋  I write about:  🔎 Topics  🧠 Embedded C Embedded Programming 👉 /tags/arm/  🧠 Embedded C Low-level architecture and embedded systems 👉 /tags/arm/  🧠 ARM Low-level architecture and embedded systems 👉 /tags/arm/  🐧 Linux Processes, kernel, systems 👉 /tags/linux/  ⚙️ CMake How code becomes machine instructions 👉 /tags/compiler/  Explore the topic by Going into the Cat...</summary>
+  <summary>Hi, I’m Your Raj Kumar Mahto 👋  I write about:  🔎 Topics  🧠 ARM Low-level architecture and embedded systems 👉 /tags/arm/  🐧 Linux Processes, kernel, systems 👉 /tags/linux/  ⚙️ CMake How code becomes machine instructions 👉 /tags/cmake/  Explore the topic by Going into the Catergories Option.</summary>
 
   </entry>
 
