@@ -1,0 +1,117 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>rajMahto_dev</title>
+  <subtitle>A minimal way to show off something which I work on.</subtitle>
+  <updated>2026-04-25T09:53:22+05:30</updated>
+  <author>
+    <name>rajmahto9876</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 rajmahto9876 </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>CMake Beginner Guide</title>
+    <link href="http://localhost:4000/posts/cmake-guide/" rel="alternate" type="text/html" title="CMake Beginner Guide" />
+    <published>2026-04-23T00:00:00+05:30</published>
+  
+    <updated>2026-04-23T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/cmake-guide/</id>
+    <content type="text/html" src="http://localhost:4000/posts/cmake-guide/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  <summary>Content…</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Linux Processes Explained</title>
+    <link href="http://localhost:4000/posts/linux-processes/" rel="alternate" type="text/html" title="Linux Processes Explained" />
+    <published>2026-04-22T00:00:00+05:30</published>
+  
+    <updated>2026-04-22T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/linux-processes/</id>
+    <content type="text/html" src="http://localhost:4000/posts/linux-processes/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  <summary>Content about Linux…</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>ARM Basics</title>
+    <link href="http://localhost:4000/posts/arm-basics/" rel="alternate" type="text/html" title="ARM Basics" />
+    <published>2026-04-21T00:00:00+05:30</published>
+  
+    <updated>2026-04-21T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/arm-basics/</id>
+    <content type="text/html" src="http://localhost:4000/posts/arm-basics/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  <summary>Content about ARM…</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="http://localhost:4000/posts/home/" rel="alternate" type="text/html" title="Welcome" />
+    <published>2026-04-20T00:00:00+05:30</published>
+  
+    <updated>2026-04-20T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/posts/home/</id>
+    <content type="text/html" src="http://localhost:4000/posts/home/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Hi, I’m Your Raj Kumar Mahto 👋  I write about:  🔎 Topics  🧠 Embedded C Embedded Programming 👉 /tags/arm/  🧠 Embedded C Low-level architecture and embedded systems 👉 /tags/arm/  🧠 ARM Low-level architecture and embedded systems 👉 /tags/arm/  🐧 Linux Processes, kernel, systems 👉 /tags/linux/  ⚙️ CMake How code becomes machine instructions 👉 /tags/compiler/  Explore the topic by Going into the Cat...</summary>
+
+  </entry>
+
+</feed>
+
+
