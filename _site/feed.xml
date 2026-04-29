@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-04-30T01:11:25+05:30</updated>
+  <updated>2026-04-30T01:22:11+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -17,30 +17,6 @@
   <icon>/Blog/assets/img/favicons/favicon.ico</icon>
   <logo>/Blog/assets/img/favicons/favicon-96x96.png</logo>
 
-
-  
-  <entry>
-    <title>ARM vs x86</title>
-    <link href="http://localhost:4000/Blog/posts/Arm-vs-x86/" rel="alternate" type="text/html" title="ARM vs x86" />
-    <published>2026-04-30T00:00:00+05:30</published>
-  
-    <updated>2026-04-30T00:00:00+05:30</updated>
-  
-    <id>http://localhost:4000/Blog/posts/Arm-vs-x86/</id>
-    <content type="text/html" src="http://localhost:4000/Blog/posts/Arm-vs-x86/" />
-    <author>
-      <name>rajmahto9876</name>
-    </author>
-
-  
-    
-    <category term="ARM" />
-    
-  
-
-  <summary></summary>
-
-  </entry>
 
   
   <entry>
@@ -72,7 +48,7 @@
     <link href="http://localhost:4000/Blog/posts/cmake-guide/" rel="alternate" type="text/html" title="CMake Beginner Guide" />
     <published>2026-04-23T00:00:00+05:30</published>
   
-    <updated>2026-04-23T00:00:00+05:30</updated>
+    <updated>2026-04-30T01:12:36+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/cmake-guide/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/cmake-guide/" />
@@ -96,7 +72,7 @@
     <link href="http://localhost:4000/Blog/posts/linux-processes/" rel="alternate" type="text/html" title="Linux Processes Explained" />
     <published>2026-04-22T00:00:00+05:30</published>
   
-    <updated>2026-04-22T00:00:00+05:30</updated>
+    <updated>2026-04-30T01:12:36+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/linux-processes/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/linux-processes/" />
@@ -120,7 +96,7 @@
     <link href="http://localhost:4000/Blog/posts/arm-basics/" rel="alternate" type="text/html" title="ARM Basics" />
     <published>2026-04-21T00:00:00+05:30</published>
   
-    <updated>2026-04-21T00:00:00+05:30</updated>
+    <updated>2026-04-30T01:12:36+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/arm-basics/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/arm-basics/" />
@@ -135,6 +111,28 @@
   
 
   <summary>ARM (Advanced RISC Machine) A processor architecture based on Reduced Instruction Set Computing (RISC).  Key Architectural Features:         RISC Architecture:   Unlike x86 (CISC), which uses complex instructions that can take multiple clock cycles, ARM (RISC) uses simpler instructions that typically execute in a single cycle.           Load/Store Architecture:   In ARM, the CPU cannot perform ...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Welcome</title>
+    <link href="http://localhost:4000/Blog/posts/home/" rel="alternate" type="text/html" title="Welcome" />
+    <published>2026-04-20T00:00:00+05:30</published>
+  
+    <updated>2026-04-27T12:36:18+05:30</updated>
+  
+    <id>http://localhost:4000/Blog/posts/home/</id>
+    <content type="text/html" src="http://localhost:4000/Blog/posts/home/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Hi, I’m Your Raj Kumar Mahto 👋  I write about:  🔎 Topics  🧠 ARM Low-level architecture and embedded systems 👉 /tags/arm/  🐧 Linux Processes, kernel, systems 👉 /tags/linux/  ⚙️ CMake How code becomes machine instructions 👉 /tags/cmake/  Explore the topic by Going into the Catergories Option.</summary>
 
   </entry>
 
