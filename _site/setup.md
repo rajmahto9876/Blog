@@ -1,11 +1,3 @@
-Check Chat GPT 
-
-
-
-https://search.brave.com/search?q=update+ruby+version+to+3.2.0+ubuntu&summary=1&conversation=0900eda5b73d3b5dc41f730dd25fec3eef8aecho 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc   
-
 ==========================================
 Installation Steps:
 ==========================================

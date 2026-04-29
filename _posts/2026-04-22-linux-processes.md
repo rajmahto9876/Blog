@@ -1,7 +1,7 @@
 ---
 title: Linux Processes Explained
 date: 2026-04-22
-categories: [blog]
+categories: [Linux]
 tags: [linux]
 ---
 

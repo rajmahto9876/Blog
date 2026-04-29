@@ -1,9 +1,27 @@
 [
   
   {
+    "title": "ARM vs x86",
+    "url": "/Blog/posts/Arm-vs-x86/",
+    "categories": "ARM",
+    "tags": "arm",
+    "date": "2026-04-30 00:00:00 +0530",
+    "content": ""
+  },
+  
+  {
+    "title": "ARM Architecture Overview",
+    "url": "/Blog/posts/arm-architecture/",
+    "categories": "ARM",
+    "tags": "arm",
+    "date": "2026-04-27 00:00:00 +0530",
+    "content": ""
+  },
+  
+  {
     "title": "CMake Beginner Guide",
-    "url": "/posts/cmake-guide/",
-    "categories": "blog",
+    "url": "/Blog/posts/cmake-guide/",
+    "categories": "Cmake",
     "tags": "cmake",
     "date": "2026-04-23 00:00:00 +0530",
     "content": "Content…"
@@ -11,8 +29,8 @@
   
   {
     "title": "Linux Processes Explained",
-    "url": "/posts/linux-processes/",
-    "categories": "blog",
+    "url": "/Blog/posts/linux-processes/",
+    "categories": "Linux",
     "tags": "linux",
     "date": "2026-04-22 00:00:00 +0530",
     "content": "Content about Linux…"
@@ -20,16 +38,16 @@
   
   {
     "title": "ARM Basics",
-    "url": "/posts/arm-basics/",
-    "categories": "blog",
+    "url": "/Blog/posts/arm-basics/",
+    "categories": "ARM",
     "tags": "arm",
     "date": "2026-04-21 00:00:00 +0530",
-    "content": "Content about ARM…"
+    "content": "ARM (Advanced RISC Machine) A processor architecture based on Reduced Instruction Set Computing (RISC).  Key Architectural Features:         RISC Architecture:   Unlike x86 (CISC), which uses complex instructions that can take multiple clock cycles, ARM (RISC) uses simpler instructions that typically execute in a single cycle.           Load/Store Architecture:   In ARM, the CPU cannot perform arithmetic or logical operations directly on data stored in the main memory (RAM).Data must be explicitly loaded from memory into a register, processed, and then stored back to memory.This separates memory access from data processing, which simplifies the pipeline and improves performance.           Large General-Purpose Register:   ARM provides a generous set of registers.   AArch64 (64-bit): Features 31 general-purpose registers (X0 to X30), each 64 bits wide.   AArch32 (32-bit): Features 16 general-purpose registers (R0 to R15)."
   },
   
   {
     "title": "Welcome",
-    "url": "/posts/home/",
+    "url": "/Blog/posts/home/",
     "categories": "",
     "tags": "",
     "date": "2026-04-20 00:00:00 +0530",
