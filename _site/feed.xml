@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-04-30T01:22:11+05:30</updated>
+  <updated>2026-04-30T12:23:25+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/Blog/posts/arm-architecture/" rel="alternate" type="text/html" title="ARM Architecture Overview" />
     <published>2026-04-27T00:00:00+05:30</published>
   
-    <updated>2026-04-27T00:00:00+05:30</updated>
+    <updated>2026-04-30T12:18:58+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/arm-architecture/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/arm-architecture/" />
@@ -38,7 +38,7 @@
     
   
 
-  <summary></summary>
+  <summary>Architecture Overview  Modern computing is largely shaped by two dominant processor architectures: ARM (RISC) and x86 (CISC). While both are designed to execute instructions and run applications, they follow fundamentally different design philosophies.  ARM (Reduced Instruction Set Computing) focuses on simplicity and efficiency. It uses a smaller, fixed set of instructions that can be executed...</summary>
 
   </entry>
 

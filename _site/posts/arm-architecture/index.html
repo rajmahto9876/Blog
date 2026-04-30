@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="ARM Architecture Overview" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal way to show off something which I work on." />
-<meta property="og:description" content="A minimal way to show off something which I work on." />
+<meta name="description" content="Architecture Overview" />
+<meta property="og:description" content="Architecture Overview" />
 <link rel="canonical" href="http://localhost:4000/Blog/posts/arm-architecture/" />
 <meta property="og:url" content="http://localhost:4000/Blog/posts/arm-architecture/" />
 <meta property="og:site_name" content="rajMahto_dev" />
@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="ARM Architecture Overview" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-27T00:00:00+05:30","datePublished":"2026-04-27T00:00:00+05:30","description":"A minimal way to show off something which I work on.","headline":"ARM Architecture Overview","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/arm-architecture/"},"url":"http://localhost:4000/Blog/posts/arm-architecture/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-30T12:18:58+05:30","datePublished":"2026-04-27T00:00:00+05:30","description":"Architecture Overview","headline":"ARM Architecture Overview","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/arm-architecture/"},"url":"http://localhost:4000/Blog/posts/arm-architecture/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -207,9 +207,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js,npm/tocbot@4.36.4/dist/tocbot.min.js"></script>
 
 
 
@@ -515,10 +522,85 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
 
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
   
 
   
@@ -545,7 +627,7 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>ARM Architecture Overview</h1>
     
@@ -576,6 +658,29 @@
       </span>
 
       <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1777531738"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Apr 30, 2026
+</time>
+
+        </span>
       
 
       
@@ -619,7 +724,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="0 words"
+  title="300 words"
 >
   <em>1 min</em> read</span>
 
@@ -629,9 +734,95 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">ARM Architecture Overview</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">ARM Architecture Overview</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
-    
+    <h2 id="architecture-overview"><span class="me-2">Architecture Overview</span><a href="#architecture-overview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Modern computing is largely shaped by two dominant processor architectures: <strong>ARM (RISC)</strong> and <strong>x86 (CISC)</strong>. While both are designed to execute instructions and run applications, they follow fundamentally different design philosophies.</p>
+
+<p><strong>ARM (Reduced Instruction Set Computing)</strong> focuses on simplicity and efficiency. It uses a smaller, fixed set of instructions that can be executed quickly, making it ideal for power-sensitive environments like smartphones, embedded systems, and increasingly, energy-efficient cloud servers.</p>
+
+<p>In contrast, <strong>x86 (Complex Instruction Set Computing)</strong> emphasizes versatility and backward compatibility. Its rich and complex instruction set allows it to handle a wide range of tasks, which is why it has long dominated desktops, laptops, and traditional enterprise servers.</p>
+
+<p>As computing evolves, the choice between ARM and x86 is no longer just about performance—it’s about balancing power efficiency, scalability, and specific workload requirements.</p>
+
+<h2 id="arm-vs-x86-key-differences"><span class="me-2">ARM vs x86: Key Differences</span><a href="#arm-vs-x86-key-differences" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>ARM (RISC)</th>
+      <th>x86 (CISC)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Instruction Set</td>
+      <td>Simple, fixed-length</td>
+      <td>Complex, variable-length</td>
+    </tr>
+    <tr>
+      <td>Power Efficiency</td>
+      <td>Exceptional (performance-per-watt focused)</td>
+      <td>Moderate to High (raw power focused)</td>
+    </tr>
+    <tr>
+      <td>Market Dominance</td>
+      <td>Mobile, IoT, Edge, Custom Cloud Servers</td>
+      <td>Desktop PCs, Legacy Enterprise Servers</td>
+    </tr>
+    <tr>
+      <td>Business Model</td>
+      <td>IP Licensing (designs sold to others)</td>
+      <td>Proprietary (manufactured in-house)</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="use-cases"><span class="me-2">Use Cases</span><a href="#use-cases" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Both ARM and x86 architectures excel in different environments based on their design priorities.</p>
+
+<h3 id="arm-risc-use-cases"><span class="me-2">ARM (RISC) Use Cases</span><a href="#arm-risc-use-cases" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li><strong>Smartphones &amp; Tablets</strong> – Power-efficient processors for long battery life</li>
+  <li><strong>IoT Devices</strong> – Sensors, smart home devices, wearables</li>
+  <li><strong>Embedded Systems</strong> – Automotive systems, industrial controllers</li>
+  <li><strong>Edge Computing</strong> – Low-power data processing near the source</li>
+  <li><strong>Cloud (Energy-Efficient Servers)</strong> – Scalable workloads with lower power consumption (e.g., AWS Graviton)</li>
+</ul>
+
+<h3 id="x86-cisc-use-cases"><span class="me-2">x86 (CISC) Use Cases</span><a href="#x86-cisc-use-cases" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<ul>
+  <li><strong>Desktop PCs &amp; Laptops</strong> – General-purpose computing with high performance</li>
+  <li><strong>Enterprise Servers</strong> – Databases, virtualization, legacy applications</li>
+  <li><strong>Gaming Systems</strong> – High-performance CPUs for complex workloads</li>
+  <li><strong>Workstations</strong> – Video editing, 3D rendering, software development</li>
+  <li><strong>Backward Compatibility Systems</strong> – Running older software and enterprise stacks</li>
+</ul>
 
   </div>
 
@@ -751,6 +942,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/Blog/posts/arm-architecture/">ARM Architecture Overview</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/Blog/posts/arm-basics/">ARM Basics</a>
         </li>
       
@@ -773,13 +971,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/Blog/posts/home/">Welcome</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/Blog/posts/arm-architecture/">ARM Architecture Overview</a>
         </li>
       
     </ul>
@@ -876,6 +1067,12 @@
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
