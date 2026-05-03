@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Welcome" />
+<meta property="og:title" content="Understanding ARM Registers" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Hi, I’m Your Raj Kumar Mahto 👋" />
-<meta property="og:description" content="Hi, I’m Your Raj Kumar Mahto 👋" />
-<link rel="canonical" href="http://localhost:4000/Blog/posts/home/" />
-<meta property="og:url" content="http://localhost:4000/Blog/posts/home/" />
+<meta name="description" content="Introduction to ARM Registers Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM." />
+<meta property="og:description" content="Introduction to ARM Registers Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM." />
+<link rel="canonical" href="http://localhost:4000/Blog/posts/arm-register/" />
+<meta property="og:url" content="http://localhost:4000/Blog/posts/arm-register/" />
 <meta property="og:site_name" content="rajMahto_dev" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-04-20T00:00:00+05:30" />
+<meta property="article:published_time" content="2026-05-01T00:00:00+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Welcome" />
+<meta property="twitter:title" content="Understanding ARM Registers" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-27T12:36:18+05:30","datePublished":"2026-04-20T00:00:00+05:30","description":"Hi, I’m Your Raj Kumar Mahto 👋","headline":"Welcome","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/home/"},"url":"http://localhost:4000/Blog/posts/home/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-01T00:00:00+05:30","datePublished":"2026-05-01T00:00:00+05:30","description":"Introduction to ARM Registers Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM.","headline":"Understanding ARM Registers","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/arm-register/"},"url":"http://localhost:4000/Blog/posts/arm-register/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Welcome | rajMahto_dev</title>
+  <title>Understanding ARM Registers | rajMahto_dev</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -439,7 +439,7 @@
         
           
             
-              <span>Welcome</span>
+              <span>Understanding ARM Registers</span>
             
 
           
@@ -507,6 +507,81 @@
 
 
 
+  
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+    
+
+    
+
+    
+      
+    
+
+    <!-- lazy-load images -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+
+        
+        
+      
+    
+
+    <!-- combine -->
+    
+  
+
+  
+
 
 <!-- Add header for code snippets -->
 
@@ -529,6 +604,50 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
       
 
       
@@ -618,7 +737,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Welcome</h1>
+    <h1 data-toc-skip>Understanding ARM Registers</h1>
     
 
     <div class="post-meta text-muted">
@@ -635,41 +754,18 @@
 
 <time
   
-  data-ts="1776623400"
+  data-ts="1777573800"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Apr 20, 2026
+  May  1, 2026
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/modules/components/locale-datetime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1777273578"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Apr 27, 2026
-</time>
-
-        </span>
       
 
       
@@ -713,9 +809,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="46 words"
+  title="589 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -724,7 +820,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">Welcome</span>
+      <span class="label text-truncate">Understanding ARM Registers</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -737,7 +833,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">Welcome</div>
+        <div class="label text-truncate py-2 ms-4">Understanding ARM Registers</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -747,33 +843,91 @@
   
 
   <div class="content">
-    <p>Hi, I’m Your Raj Kumar Mahto 👋</p>
+    <h2 id="introduction-to-arm-registers"><span class="me-2">Introduction to ARM Registers</span><a href="#introduction-to-arm-registers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM.</p>
 
-<p>I write about:</p>
+<p>The ARM architecture is a Load-Store architecture. This means data must be moved from memory into a register before it can be processed. Once processed, the result is stored back into memory from the register.</p>
 
-<h2 id="-topics"><span class="me-2">🔎 Topics</span><a href="#-topics" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>The 32-bit ARM architecture comprises of the following.</p>
 
-<h3 id="-arm"><span class="me-2">🧠 ARM</span><a href="#-arm" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Low-level architecture and embedded systems<br />
-👉 <a href="/tags/arm/">/tags/arm/</a></p>
+<p><a href="/Blog/assets/image/arm-32-bit-register.jpg" class="popup img-link shimmer"><img src="/Blog/assets/image/arm-32-bit-register.jpg" alt="ARM 32-bit Registers" loading="lazy"></a></p>
 
-<h3 id="-linux"><span class="me-2">🐧 Linux</span><a href="#-linux" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Processes, kernel, systems<br />
-👉 <a href="/tags/linux/">/tags/linux/</a></p>
+<h2 id="general-purpose-registers-r0---r12"><span class="me-2">General-Purpose Registers (R0 - R12)</span><a href="#general-purpose-registers-r0---r12" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<h3 id="️-cmake"><span class="me-2">⚙️ CMake</span><a href="#️-cmake" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>How code becomes machine instructions<br />
-👉 <a href="/tags/cmake/">/tags/cmake/</a></p>
+<p>The 32-bit ARM architecture features 16 visible registers (R0 through R15). The first 13 of these, <strong>R0 to R12</strong>, are considered general-purpose registers. They are used to hold data, addresses, or intermediate results during computation.</p>
 
-<p>Explore the topic by Going into the Catergories Option.</p>
+<ul>
+  <li><strong>R0 - R3:</strong> These are often used as “scratch” registers. According to the ARM Procedure Call Standard (AAPCS), they are used to pass arguments into functions and return values from functions. They are volatile, meaning a function can overwrite them without needing to restore their original values.</li>
+  <li><strong>R4 - R11:</strong> These are typically used for local variables within a function. They are non-volatile (or callee-saved), meaning if a function wants to use them, it must first save their original values (usually to the stack) and restore them before returning.</li>
+  <li><strong>R12:</strong> Often known as the Intra-Procedure-call scratch register (IP), used by the linker as a scratch register.</li>
+</ul>
+
+<h2 id="special-purpose-registers-r13---r15"><span class="me-2">Special-Purpose Registers (R13 - R15)</span><a href="#special-purpose-registers-r13---r15" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The last three registers have specific hardware-defined.</p>
+<h3 id="r13-stack-pointer-sp"><span class="me-2">R13: Stack Pointer (SP)</span><a href="#r13-stack-pointer-sp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>The Stack Pointer holds the memory address of the top of the stack. The stack is a vital region of memory used for temporarily storing data, such as local variables, and preserving register values when calling functions. When you push data onto the stack, the SP decreases (ARM stacks typically grow downwards in memory), and when you pop data off, the SP increases.</p>
+
+<h3 id="r14-link-register-lr"><span class="me-2">R14: Link Register (LR)</span><a href="#r14-link-register-lr" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>The Link Register holds the return address when a function call is made. When a <code class="language-plaintext highlighter-rouge">BL</code> (Branch with Link) instruction is executed to jump to a subroutine, the address of the next instruction (the one immediately following the <code class="language-plaintext highlighter-rouge">BL</code>) is automatically saved in the LR. When the subroutine finishes, it simply copies the LR back into the Program Counter (PC) to return control to the caller.</p>
+
+<h3 id="r15-program-counter-pc"><span class="me-2">R15: Program Counter (PC)</span><a href="#r15-program-counter-pc" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>The Program Counter is arguably the most critical register. It holds the address of the <em>next</em> instruction the CPU will execute. Modifying the PC directly causes the processor to branch to a different part of the code. In ARM state, the PC is typically 8 bytes ahead of the currently executing instruction due to the instruction pipeline.</p>
+
+<h2 id="current-program-status-register-cpsr"><span class="me-2">Current Program Status Register (CPSR)</span><a href="#current-program-status-register-cpsr" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Alongside R0-R15, there is a special register that tracks the current state of the processor: the <strong>CPSR (Current Program Status Register)</strong>.</p>
+
+<p>The CPSR contains:</p>
+<ul>
+  <li><strong>Condition Flags (N, Z, C, V):</strong> These flags are updated by arithmetic and logical operations.
+    <ul>
+      <li><strong>N (Negative):</strong> Set if the result is negative.</li>
+      <li><strong>Z (Zero):</strong> Set if the result is zero.</li>
+      <li><strong>C (Carry):</strong> Set if an operation caused a carry out.</li>
+      <li><strong>V (Overflow):</strong> Set if an operation caused a signed overflow.</li>
+    </ul>
+  </li>
+  <li><strong>Control Bits:</strong> These determine the processor’s operating mode (e.g., User, Supervisor, IRQ) and state (ARM or Thumb mode), as well as interrupt mask bits.</li>
+</ul>
+
+<h2 id="a-note-on-64-bit-arm-aarch64"><span class="me-2">A Note on 64-bit ARM (AArch64)</span><a href="#a-note-on-64-bit-arm-aarch64" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>The 64-bit ARM architecture (AArch64) significantly expands the register set. It features 31 general-purpose 64-bit registers (<strong>X0 to X30</strong>), with the lower 32 bits accessible as <strong>W0 to W30</strong>. It also introduces a dedicated zero register (<code class="language-plaintext highlighter-rouge">XZR</code>/<code class="language-plaintext highlighter-rouge">WZR</code>) and separates the Program Counter (<code class="language-plaintext highlighter-rouge">PC</code>) and Stack Pointer (<code class="language-plaintext highlighter-rouge">SP</code>) from the general-purpose register pool.</p>
 
   </div>
 
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
+        
+          <a href="/Blog/categories/arm/">ARM</a>
+      </div>
+    
 
     <!-- tags -->
+    
+      <div class="post-tags">
+        <i class="fa fa-tags fa-fw me-1"></i>
+        
+          <a
+            href="/Blog/tags/arm/"
+            class="post-tag no-text-decoration"
+          >arm</a>
+        
+          <a
+            href="/Blog/tags/assembly/"
+            class="post-tag no-text-decoration"
+          >assembly</a>
+        
+          <a
+            href="/Blog/tags/registers/"
+            class="post-tag no-text-decoration"
+          >registers</a>
+        
+      </div>
     
 
     <div
@@ -807,14 +961,14 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Welcome%20-%20rajMahto_dev&url=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Fhome%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Understanding%20ARM%20Registers%20-%20rajMahto_dev&url=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Farm-register%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Welcome%20-%20rajMahto_dev&u=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Fhome%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Understanding%20ARM%20Registers%20-%20rajMahto_dev&u=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Farm-register%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
@@ -1104,6 +1258,34 @@
 
 
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
 
 
 
@@ -1113,6 +1295,70 @@
 
 
 
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/Blog/posts/arm-architecture/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1777228200"
+  data-df="ll"
+  
+>
+  Apr 27, 2026
+</time>
+
+              <h4 class="pt-0 my-2">ARM Architecture Overview</h4>
+              <div class="text-muted">
+                <p>Architecture Overview  Modern computing is largely shaped by two dominant processor architectures: ARM (RISC) and x86 (CISC). While both are designed to execute instructions and run applications, t...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/Blog/posts/arm-basics/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1776709800"
+  data-df="ll"
+  
+>
+  Apr 21, 2026
+</time>
+
+              <h4 class="pt-0 my-2">ARM Basics</h4>
+              <div class="text-muted">
+                <p>ARM (Advanced RISC Machine) A processor architecture based on Reduced Instruction Set Computing (RISC).  Key Architectural Features:         RISC Architecture:   Unlike x86 (CISC), which uses compl...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1124,19 +1370,19 @@
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
+    <a
+      href="/Blog/posts/arm-architecture/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>ARM Architecture Overview</p>
+    </a>
   
 
   
-    <a
-      href="/Blog/posts/arm-basics/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>ARM Basics</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
