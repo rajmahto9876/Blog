@@ -1,8 +1,8 @@
 ---
 title: ARM Basics
 date: 2026-04-21
-categories: [ARM]
-tags: [arm]
+categories: [arm]
+tags: [arm, basic]
 ---
 
 ARM (Advanced RISC Machine)<br>

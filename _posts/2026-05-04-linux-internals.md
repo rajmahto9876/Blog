@@ -1,8 +1,8 @@
 ---
 title: Process vs Threads
 date: 2026-05-04
-categories: [Linux Internals]
-tags: [linux internals]
+categories: [Linux-Internals]
+tags: [Linux-internals]
 ---
 # Linux Internals — Process vs Thread
 ---

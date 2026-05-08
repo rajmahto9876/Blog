@@ -1,7 +1,7 @@
 ---
-title: Linux Processes Explained
+title: Driver Development Setup
 date: 2026-04-22
-categories: [Linux]
+categories: [Linux Driver Development]
 tags: [linux]
 ---
 

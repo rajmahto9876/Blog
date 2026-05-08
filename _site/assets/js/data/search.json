@@ -1,10 +1,19 @@
 [
   
   {
+    "title": "CMake First Project",
+    "url": "/Blog/posts/cmake-first-project/",
+    "categories": "Cmake",
+    "tags": "cmake, Start",
+    "date": "2026-05-08 00:00:00 +0530",
+    "content": "Creating Your First CMake Project  Project Structure  hello/ ├── CMakeLists.txt └── main.cpp     Writing the Source Code  main.cpp  #include &lt;iostream&gt;  int main() {     std::cout &lt;&lt; \"Hello CMake Build!\" &lt;&lt; std::endl;     return 0; }     Creating the CMakeLists.txt File  touch CMakeLists.txt  CMakeLists.txt  cmake_minimum_required(VERSION 3.10) project(Hello) add_executable(hello main.cpp)     Understanding the Commands  cmake_minimum_required()  Defines the minimum required CMake version.  cmake_minimum_required(VERSION 3.10)     project()  Defines the project name.  project(Hello)     add_executable()  Creates an executable target.  add_executable(hello main.cpp)      hello → executable name   main.cpp → source file     Building the Project  Step 1: Create Build Directory    cmake -B outputDir  Generate build files in a separate directory (out-of-source outputDir). CMake reads the CMakeLists.txt file from the parent directory and generates platform-specific build files.    Step 2: Compile the Project  cmake --build outputDir     Step 3: Run the Program  Linux/macOS  cd outputDir ./hello   Windows   Go to outputDir hello.exe    Output:  Hello from CMake!"
+  },
+  
+  {
     "title": "Process vs Threads",
     "url": "/Blog/posts/linux-internals/",
-    "categories": "Linux Internals",
-    "tags": "linux internals",
+    "categories": "Linux-Internals",
+    "tags": "Linux-internals",
     "date": "2026-05-04 00:00:00 +0530",
     "content": "Linux Internals — Process vs Thread   Process  Definition  A process is an independent running program with its own memory and resources.  Features     Separate address space   Own PID   Own heap, stack, globals   Heavyweight   Creation  fork();   Example  firefox vim gcc     Thread  Definition  A thread is a lightweight execution unit inside a process.  Features     Shares process memory   Own stack + registers   Lightweight   Faster creation   Creation  pthread_create();     Process vs Thread                 Feature       Process       Thread                       Memory       Separate       Shared                 Stack       Separate       Separate                 Heap       Separate       Shared                 Communication       IPC       Shared memory                 Speed       Slow       Fast                 Isolation       Strong       Weak             Shared Between Threads  Code Segment Heap Global Variables File Descriptors     NOT Shared Between Threads  Stack Registers Program Counter     Linux Internal  Both processes and threads use:  task_struct   Linux creates threads using:  clone()     Process Creation Example  #include &lt;stdio.h&gt; #include &lt;unistd.h&gt;  int main() {     pid_t pid = fork();      if (pid == 0)     {         printf(\"Child Process\\n\");     }     else     {         printf(\"Parent Process\\n\");     }     while(1);     return 0; }     Thread Creation Example  #include &lt;pthread.h&gt; #include &lt;stdio.h&gt;  void* func(void* arg) {     printf(\"Thread Running\\n\");     return NULL; }  int main() {     pthread_t t;      pthread_create(&amp;t, NULL, func, NULL);     pthread_join(t, NULL);      return 0; }   Compile:  gcc file.c -o out -pthread     Race Condition  Problem  Multiple threads access shared resource simultaneously.  Example:  count++;   Fix  Use mutex.  pthread_mutex_lock(&amp;lock); count++; pthread_mutex_unlock(&amp;lock);     Mutex  Protect critical section.  APIs  pthread_mutex_init() pthread_mutex_lock() pthread_mutex_unlock() pthread_mutex_destroy()     Critical Section  Code accessing shared resource.  Example:  count++;     Context Switch  CPU switching between:     processes   threads   Process switch  Heavy:     page tables   TLB flush   Thread switch  Cheaper:     same address space     Process States  Running Ready Sleeping Stopped Zombie     Zombie Process  Child exits but parent does not call:  wait();   Important Commands  Check processes  ps -ef   Check threads  ps -eLf   View thread IDs  ls /proc/&lt;PID&gt;/task/"
   },
@@ -12,7 +21,7 @@
   {
     "title": "Understanding ARM Registers",
     "url": "/Blog/posts/arm-register/",
-    "categories": "ARM",
+    "categories": "arm",
     "tags": "arm, assembly, registers",
     "date": "2026-05-01 00:00:00 +0530",
     "content": "Introduction to ARM Registers Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM.  The ARM architecture is a Load-Store architecture. This means data must be moved from memory into a register before it can be processed. Once processed, the result is stored back into memory from the register.  The 32-bit ARM architecture comprises of the following.    General-Purpose Registers (R0 - R12)  The 32-bit ARM architecture features 16 visible registers (R0 through R15). The first 13 of these, R0 to R12, are considered general-purpose registers. They are used to hold data, addresses, or intermediate results during computation.     R0 - R3: These are often used as “scratch” registers. According to the ARM Procedure Call Standard (AAPCS), they are used to pass arguments into functions and return values from functions. They are volatile, meaning a function can overwrite them without needing to restore their original values.   R4 - R11: These are typically used for local variables within a function. They are non-volatile (or callee-saved), meaning if a function wants to use them, it must first save their original values (usually to the stack) and restore them before returning.   R12: Often known as the Intra-Procedure-call scratch register (IP), used by the linker as a scratch register.   Special-Purpose Registers (R13 - R15)  The last three registers have specific hardware-defined. R13: Stack Pointer (SP) The Stack Pointer holds the memory address of the top of the stack. The stack is a vital region of memory used for temporarily storing data, such as local variables, and preserving register values when calling functions. When you push data onto the stack, the SP decreases (ARM stacks typically grow downwards in memory), and when you pop data off, the SP increases.  R14: Link Register (LR) The Link Register holds the return address when a function call is made. When a BL (Branch with Link) instruction is executed to jump to a subroutine, the address of the next instruction (the one immediately following the BL) is automatically saved in the LR. When the subroutine finishes, it simply copies the LR back into the Program Counter (PC) to return control to the caller.  R15: Program Counter (PC) The Program Counter is arguably the most critical register. It holds the address of the next instruction the CPU will execute. Modifying the PC directly causes the processor to branch to a different part of the code. In ARM state, the PC is typically 8 bytes ahead of the currently executing instruction due to the instruction pipeline.  Current Program Status Register (CPSR)  Alongside R0-R15, there is a special register that tracks the current state of the processor: the CPSR (Current Program Status Register).  The CPSR contains:    Condition Flags (N, Z, C, V): These flags are updated by arithmetic and logical operations.            N (Negative): Set if the result is negative.       Z (Zero): Set if the result is zero.       C (Carry): Set if an operation caused a carry out.       V (Overflow): Set if an operation caused a signed overflow.           Control Bits: These determine the processor’s operating mode (e.g., User, Supervisor, IRQ) and state (ARM or Thumb mode), as well as interrupt mask bits.   A Note on 64-bit ARM (AArch64)  The 64-bit ARM architecture (AArch64) significantly expands the register set. It features 31 general-purpose 64-bit registers (X0 to X30), with the lower 32 bits accessible as W0 to W30. It also introduces a dedicated zero register (XZR/WZR) and separates the Program Counter (PC) and Stack Pointer (SP) from the general-purpose register pool."
@@ -21,8 +30,8 @@
   {
     "title": "ARM Architecture Overview",
     "url": "/Blog/posts/arm-architecture/",
-    "categories": "ARM",
-    "tags": "arm",
+    "categories": "arm",
+    "tags": "arm, architecture",
     "date": "2026-04-27 00:00:00 +0530",
     "content": "Architecture Overview  Modern computing is largely shaped by two dominant processor architectures: ARM (RISC) and x86 (CISC). While both are designed to execute instructions and run applications, they follow fundamentally different design philosophies.  ARM (Reduced Instruction Set Computing) focuses on simplicity and efficiency. It uses a smaller, fixed set of instructions that can be executed quickly, making it ideal for power-sensitive environments like smartphones, embedded systems, and increasingly, energy-efficient cloud servers.  In contrast, x86 (Complex Instruction Set Computing) emphasizes versatility and backward compatibility. Its rich and complex instruction set allows it to handle a wide range of tasks, which is why it has long dominated desktops, laptops, and traditional enterprise servers.  As computing evolves, the choice between ARM and x86 is no longer just about performance—it’s about balancing power efficiency, scalability, and specific workload requirements.  ARM vs x86: Key Differences                 Feature       ARM (RISC)       x86 (CISC)                       Instruction Set       Simple, fixed-length       Complex, variable-length                 Power Efficiency       Exceptional (performance-per-watt focused)       Moderate to High (raw power focused)                 Market Dominance       Mobile, IoT, Edge, Custom Cloud Servers       Desktop PCs, Legacy Enterprise Servers                 Business Model       IP Licensing (designs sold to others)       Proprietary (manufactured in-house)           Use Cases  Both ARM and x86 architectures excel in different environments based on their design priorities.  ARM (RISC) Use Cases    Smartphones &amp; Tablets – Power-efficient processors for long battery life   IoT Devices – Sensors, smart home devices, wearables   Embedded Systems – Automotive systems, industrial controllers   Edge Computing – Low-power data processing near the source   Cloud (Energy-Efficient Servers) – Scalable workloads with lower power consumption (e.g., AWS Graviton)   x86 (CISC) Use Cases    Desktop PCs &amp; Laptops – General-purpose computing with high performance   Enterprise Servers – Databases, virtualization, legacy applications   Gaming Systems – High-performance CPUs for complex workloads   Workstations – Video editing, 3D rendering, software development   Backward Compatibility Systems – Running older software and enterprise stacks"
   },
@@ -33,13 +42,13 @@
     "categories": "Cmake",
     "tags": "cmake",
     "date": "2026-04-23 00:00:00 +0530",
-    "content": "Content…"
+    "content": "Getting Started with CMake  Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms and compilers. Instead of writing separate build scripts for Linux, Windows, or macOS, you write a single CMakeLists.txt file and let CMake generate the appropriate build files.  It is widely used in:     C++ application development   Embedded systems   Game engines   Cross-platform libraries   Large-scale enterprise software   Open-source projects     Why Use CMake?  Traditional Makefiles become difficult to maintain as projects grow. CMake solves this by providing:                 Feature       Benefit                       Cross-platform support       Build on Linux, Windows, macOS                 Compiler independence       Works with GCC, Clang, MSVC                 Dependency management       Easier integration with libraries                 Scalable structure       Better organization for large projects                 IDE integration       Generates Visual Studio, Ninja, Makefiles             Installing CMake  Linux (Ubuntu/Debian)  sudo apt update sudo apt install cmake   Mac OS  brew install cmake   Windows (Ubuntu/Debian)  https://cmake.org/download/   Verify Installation  cmake --version"
   },
   
   {
-    "title": "Linux Processes Explained",
+    "title": "Driver Development Setup",
     "url": "/Blog/posts/linux-processes/",
-    "categories": "Linux",
+    "categories": "Linux Driver Development",
     "tags": "linux",
     "date": "2026-04-22 00:00:00 +0530",
     "content": "Content about Linux…"
@@ -48,8 +57,8 @@
   {
     "title": "ARM Basics",
     "url": "/Blog/posts/arm-basics/",
-    "categories": "ARM",
-    "tags": "arm",
+    "categories": "arm",
+    "tags": "arm, basic",
     "date": "2026-04-21 00:00:00 +0530",
     "content": "ARM (Advanced RISC Machine) A processor architecture based on Reduced Instruction Set Computing (RISC).  Key Architectural Features:         RISC Architecture:   Unlike x86 (CISC), which uses complex instructions that can take multiple clock cycles, ARM (RISC) uses simpler instructions that typically execute in a single cycle.           Load/Store Architecture:   In ARM, the CPU cannot perform arithmetic or logical operations directly on data stored in the main memory (RAM).Data must be explicitly loaded from memory into a register, processed, and then stored back to memory.This separates memory access from data processing, which simplifies the pipeline and improves performance.           Large General-Purpose Register:   ARM provides a generous set of registers.   AArch64 (64-bit): Features 31 general-purpose registers (X0 to X30), each 64 bits wide.   AArch32 (32-bit): Features 16 general-purpose registers (R0 to R15)."
   },
@@ -60,7 +69,7 @@
     "categories": "",
     "tags": "",
     "date": "2026-04-20 00:00:00 +0530",
-    "content": "Hi, I’m Your Raj Kumar Mahto 👋  I write about:  🔎 Topics  🧠 ARM Low-level architecture and embedded systems 👉 /tags/arm/  🐧 Linux Processes, kernel, systems 👉 /tags/linux/  ⚙️ CMake How code becomes machine instructions 👉 /tags/cmake/  Explore the topic by Going into the Catergories Option."
+    "content": "Hi, I’m Raj Kumar Mahto 👋  I write about low-level systems, embedded architecture, Linux internals, and build systems.    🔎 Explore Topics  🧠 ARM Low-level architecture, embedded systems, and processor internals.  👉 Explore ARM Posts    🐧 Linux Internals Processes, memory management, kernel internals, and system programming.  👉 Explore Linux Posts    🧩 Linux Driver Development Device drivers, kernel modules, and hardware interaction.  👉 Explore Driver Development Posts    ⚙️ CMake Build systems, compilation flow, and project organization.  👉 Explore CMake Posts"
   }
   
 ]

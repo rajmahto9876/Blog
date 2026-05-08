@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-05-08T13:57:07+05:30</updated>
+  <updated>2026-05-08T20:08:33+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -17,6 +17,30 @@
   <icon>/Blog/assets/img/favicons/favicon.ico</icon>
   <logo>/Blog/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>CMake First Project</title>
+    <link href="http://localhost:4000/Blog/posts/cmake-first-project/" rel="alternate" type="text/html" title="CMake First Project" />
+    <published>2026-05-08T00:00:00+05:30</published>
+  
+    <updated>2026-05-08T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/Blog/posts/cmake-first-project/</id>
+    <content type="text/html" src="http://localhost:4000/Blog/posts/cmake-first-project/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="Cmake" />
+    
+  
+
+  <summary>Creating Your First CMake Project  Project Structure  hello/ ├── CMakeLists.txt └── main.cpp     Writing the Source Code  main.cpp  #include &amp;lt;iostream&amp;gt;  int main() {     std::cout &amp;lt;&amp;lt; "Hello CMake Build!" &amp;lt;&amp;lt; std::endl;     return 0; }     Creating the CMakeLists.txt File  touch CMakeLists.txt  CMakeLists.txt  cmake_minimum_required(VERSION 3.10) project(Hello) add_executable(he...</summary>
+
+  </entry>
 
   
   <entry>
@@ -34,7 +58,7 @@
 
   
     
-    <category term="Linux Internals" />
+    <category term="Linux-Internals" />
     
   
 
@@ -58,7 +82,7 @@
 
   
     
-    <category term="ARM" />
+    <category term="arm" />
     
   
 
@@ -82,7 +106,7 @@
 
   
     
-    <category term="ARM" />
+    <category term="arm" />
     
   
 
@@ -110,31 +134,7 @@
     
   
 
-  <summary>Content…</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Linux Processes Explained</title>
-    <link href="http://localhost:4000/Blog/posts/linux-processes/" rel="alternate" type="text/html" title="Linux Processes Explained" />
-    <published>2026-04-22T00:00:00+05:30</published>
-  
-    <updated>2026-04-30T01:12:36+05:30</updated>
-  
-    <id>http://localhost:4000/Blog/posts/linux-processes/</id>
-    <content type="text/html" src="http://localhost:4000/Blog/posts/linux-processes/" />
-    <author>
-      <name>rajmahto9876</name>
-    </author>
-
-  
-    
-    <category term="Linux" />
-    
-  
-
-  <summary>Content about Linux…</summary>
+  <summary>Getting Started with CMake  Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms and compilers. Instead of writing s...</summary>
 
   </entry>
 

@@ -32,8 +32,8 @@
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="CMake Beginner Guide" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Content…" />
-<meta property="og:description" content="Content…" />
+<meta name="description" content="Getting Started with CMake" />
+<meta property="og:description" content="Getting Started with CMake" />
 <link rel="canonical" href="http://localhost:4000/Blog/posts/cmake-guide/" />
 <meta property="og:url" content="http://localhost:4000/Blog/posts/cmake-guide/" />
 <meta property="og:site_name" content="rajMahto_dev" />
@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="CMake Beginner Guide" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-30T01:12:36+05:30","datePublished":"2026-04-23T00:00:00+05:30","description":"Content…","headline":"CMake Beginner Guide","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/cmake-guide/"},"url":"http://localhost:4000/Blog/posts/cmake-guide/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-04-30T01:12:36+05:30","datePublished":"2026-04-23T00:00:00+05:30","description":"Getting Started with CMake","headline":"CMake Beginner Guide","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/cmake-guide/"},"url":"http://localhost:4000/Blog/posts/cmake-guide/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -207,9 +207,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js,npm/tocbot@4.36.4/dist/tocbot.min.js"></script>
 
 
 
@@ -260,16 +267,6 @@
       <!-- the real tabs -->
       
         <li class="nav-item">
-          <a href="/Blog/categories/" class="nav-link">
-            <i class="fa-fw fas fa-stream"></i>
-            
-
-            <span>CATEGORIES</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
-      
-        <li class="nav-item">
           <a href="/Blog/resume/" class="nav-link">
             <i class="fa-fw fas fa-file"></i>
             
@@ -280,11 +277,11 @@
         <!-- .nav-item -->
       
         <li class="nav-item">
-          <a href="/Blog/tags/" class="nav-link">
-            <i class="fa-fw fas fa-tags"></i>
+          <a href="/Blog/categories/" class="nav-link">
+            <i class="fa-fw fas fa-stream"></i>
             
 
-            <span>TAGS</span>
+            <span>CATEGORIES</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -295,6 +292,16 @@
             
 
             <span>ARCHIVES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/Blog/tags/" class="nav-link">
+            <i class="fa-fw fas fa-tags"></i>
+            
+
+            <span>TAGS</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -515,6 +522,71 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -545,7 +617,7 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
     <h1 data-toc-skip>CMake Beginner Guide</h1>
     
@@ -642,7 +714,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1 words"
+  title="174 words"
 >
   <em>1 min</em> read</span>
 
@@ -652,9 +724,123 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">CMake Beginner Guide</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">CMake Beginner Guide</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
-    <p>Content…</p>
+    <h1 id="getting-started-with-cmake">Getting Started with CMake</h1>
+
+<h2 id="introduction"><span class="me-2">Introduction</span><a href="#introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where <strong>CMake</strong> becomes essential.</p>
+
+<p>CMake is an open-source build system generator that helps developers automate the compilation process across different platforms and compilers. Instead of writing separate build scripts for Linux, Windows, or macOS, you write a single <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> file and let CMake generate the appropriate build files.</p>
+
+<p>It is widely used in:</p>
+
+<ul>
+  <li>C++ application development</li>
+  <li>Embedded systems</li>
+  <li>Game engines</li>
+  <li>Cross-platform libraries</li>
+  <li>Large-scale enterprise software</li>
+  <li>Open-source projects</li>
+</ul>
+
+<hr />
+
+<h1 id="why-use-cmake">Why Use CMake?</h1>
+
+<p>Traditional Makefiles become difficult to maintain as projects grow. CMake solves this by providing:</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Benefit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cross-platform support</td>
+      <td>Build on Linux, Windows, macOS</td>
+    </tr>
+    <tr>
+      <td>Compiler independence</td>
+      <td>Works with GCC, Clang, MSVC</td>
+    </tr>
+    <tr>
+      <td>Dependency management</td>
+      <td>Easier integration with libraries</td>
+    </tr>
+    <tr>
+      <td>Scalable structure</td>
+      <td>Better organization for large projects</td>
+    </tr>
+    <tr>
+      <td>IDE integration</td>
+      <td>Generates Visual Studio, Ninja, Makefiles</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<hr />
+
+<h1 id="installing-cmake">Installing CMake</h1>
+
+<h2 id="linux-ubuntudebian"><span class="me-2">Linux (Ubuntu/Debian)</span><a href="#linux-ubuntudebian" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt <span class="nb">install </span>cmake
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="mac-os"><span class="me-2">Mac OS</span><a href="#mac-os" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>brew <span class="nb">install </span>cmake
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="windows-ubuntudebian"><span class="me-2">Windows (Ubuntu/Debian)</span><a href="#windows-ubuntudebian" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>https://cmake.org/download/
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="verify-installation"><span class="me-2">Verify Installation</span><a href="#verify-installation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>cmake <span class="nt">--version</span>
+</pre></td></tr></tbody></table></code></div></div>
 
   </div>
 
@@ -774,6 +960,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/Blog/posts/cmake-first-project/">CMake First Project</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/Blog/posts/linux-internals/">Process vs Threads</a>
         </li>
       
@@ -796,13 +989,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/Blog/posts/arm-basics/">ARM Basics</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/Blog/posts/linux-processes/">Linux Processes Explained</a>
         </li>
       
     </ul>
@@ -831,15 +1017,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -859,6 +1036,72 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -875,6 +1118,119 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -903,6 +1259,13 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -921,29 +1284,6 @@
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -985,19 +1325,28 @@
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/arm/">arm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/assembly/">assembly</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/cmake/">cmake</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux-internals/">linux internals</a>
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/architecture/">architecture</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/assembly/">assembly</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/basic/">basic</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux-internals/">Linux-internals</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux/">linux</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/registers/">registers</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/start/">Start</a>
       
     </div>
   </section>
@@ -1013,6 +1362,12 @@
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
@@ -1052,6 +1407,17 @@
 
   
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
 
 
@@ -1061,6 +1427,43 @@
 
 
 
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/Blog/posts/cmake-first-project/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/modules/components/locale-datetime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1778178600"
+  data-df="ll"
+  
+>
+  May  8, 2026
+</time>
+
+              <h4 class="pt-0 my-2">CMake First Project</h4>
+              <div class="text-muted">
+                <p>Creating Your First CMake Project  Project Structure  1 2 3 hello/ ├── CMakeLists.txt └── main.cpp     Writing the Source Code  main.cpp  1 2 3 4 5 6 7 #include &lt;iostream&gt;  int main() {     s...</p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
 
 
             
@@ -1077,7 +1480,7 @@
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Linux Processes Explained</p>
+      <p>Driver Development Setup</p>
     </a>
   
 
@@ -1159,15 +1562,6 @@
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
   
     
     
@@ -1187,6 +1581,72 @@
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
     
   
@@ -1203,6 +1663,119 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1231,6 +1804,13 @@
     
     
     
+      
+    
+  
+    
+    
+    
+    
   
     
     
@@ -1249,29 +1829,6 @@
     
     
     
-    
-      
-    
-  
-    
-    
-    
-    
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
     
   
     
@@ -1313,19 +1870,28 @@
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/arm/">arm</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/assembly/">assembly</a>
-      
-        
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/cmake/">cmake</a>
       
         
-        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux-internals/">linux internals</a>
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/architecture/">architecture</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/assembly/">assembly</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/basic/">basic</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux-internals/">Linux-internals</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux/">linux</a>
       
         
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/registers/">registers</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/start/">Start</a>
       
     </div>
   </section>

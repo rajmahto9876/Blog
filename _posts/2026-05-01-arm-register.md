@@ -1,7 +1,7 @@
 ---
 title: Understanding ARM Registers
 date: 2026-05-01
-categories: [ARM]
+categories: [arm]
 tags: [arm, assembly, registers]
 ---
 
