@@ -35,10 +35,10 @@ Installation Steps:
 
 2. Auto-reload while editing (optional but useful)
 	
-	#1. Clean the previous build 
+	# 1. Clean the previous build 
 		bundle exec jekyll clean
 		
 
-	#2. Enable live rebuild
+	# 2. Enable live rebuild
 		bundle exec jekyll serve --livereload
 	
