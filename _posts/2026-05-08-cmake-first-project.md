@@ -2,7 +2,7 @@
 title: CMake First Project
 date: 2026-05-08
 categories: [Cmake]
-tags: [cmake, Start]
+tags: [cmake, First]
 ---
 
 # Creating Your First CMake Project

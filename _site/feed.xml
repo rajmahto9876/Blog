@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-05-08T20:08:33+05:30</updated>
+  <updated>2026-05-08T20:17:17+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -48,7 +48,7 @@
     <link href="http://localhost:4000/Blog/posts/linux-internals/" rel="alternate" type="text/html" title="Process vs Threads" />
     <published>2026-05-04T00:00:00+05:30</published>
   
-    <updated>2026-05-04T00:00:00+05:30</updated>
+    <updated>2026-05-08T20:11:03+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/linux-internals/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/linux-internals/" />
@@ -72,7 +72,7 @@
     <link href="http://localhost:4000/Blog/posts/arm-register/" rel="alternate" type="text/html" title="Understanding ARM Registers" />
     <published>2026-05-01T00:00:00+05:30</published>
   
-    <updated>2026-05-01T00:00:00+05:30</updated>
+    <updated>2026-05-08T20:11:03+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/arm-register/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/arm-register/" />
@@ -96,7 +96,7 @@
     <link href="http://localhost:4000/Blog/posts/arm-architecture/" rel="alternate" type="text/html" title="ARM Architecture Overview" />
     <published>2026-04-27T00:00:00+05:30</published>
   
-    <updated>2026-04-30T12:18:58+05:30</updated>
+    <updated>2026-05-08T20:11:03+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/arm-architecture/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/arm-architecture/" />
@@ -120,7 +120,7 @@
     <link href="http://localhost:4000/Blog/posts/cmake-guide/" rel="alternate" type="text/html" title="CMake Beginner Guide" />
     <published>2026-04-23T00:00:00+05:30</published>
   
-    <updated>2026-04-30T01:12:36+05:30</updated>
+    <updated>2026-05-08T20:11:03+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/cmake-guide/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/cmake-guide/" />
@@ -134,7 +134,7 @@
     
   
 
-  <summary>Getting Started with CMake  Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms and compilers. Instead of writing s...</summary>
+  <summary>Getting Started with CMake https://rajmahto9876.github.io/Blog/ Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms...</summary>
 
   </entry>
 

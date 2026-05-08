@@ -4,7 +4,7 @@
     "title": "CMake First Project",
     "url": "/Blog/posts/cmake-first-project/",
     "categories": "Cmake",
-    "tags": "cmake, Start",
+    "tags": "cmake, First",
     "date": "2026-05-08 00:00:00 +0530",
     "content": "Creating Your First CMake Project  Project Structure  hello/ ├── CMakeLists.txt └── main.cpp     Writing the Source Code  main.cpp  #include &lt;iostream&gt;  int main() {     std::cout &lt;&lt; \"Hello CMake Build!\" &lt;&lt; std::endl;     return 0; }     Creating the CMakeLists.txt File  touch CMakeLists.txt  CMakeLists.txt  cmake_minimum_required(VERSION 3.10) project(Hello) add_executable(hello main.cpp)     Understanding the Commands  cmake_minimum_required()  Defines the minimum required CMake version.  cmake_minimum_required(VERSION 3.10)     project()  Defines the project name.  project(Hello)     add_executable()  Creates an executable target.  add_executable(hello main.cpp)      hello → executable name   main.cpp → source file     Building the Project  Step 1: Create Build Directory    cmake -B outputDir  Generate build files in a separate directory (out-of-source outputDir). CMake reads the CMakeLists.txt file from the parent directory and generates platform-specific build files.    Step 2: Compile the Project  cmake --build outputDir     Step 3: Run the Program  Linux/macOS  cd outputDir ./hello   Windows   Go to outputDir hello.exe    Output:  Hello from CMake!"
   },
@@ -40,15 +40,15 @@
     "title": "CMake Beginner Guide",
     "url": "/Blog/posts/cmake-guide/",
     "categories": "Cmake",
-    "tags": "cmake",
+    "tags": "cmake, Set-up",
     "date": "2026-04-23 00:00:00 +0530",
-    "content": "Getting Started with CMake  Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms and compilers. Instead of writing separate build scripts for Linux, Windows, or macOS, you write a single CMakeLists.txt file and let CMake generate the appropriate build files.  It is widely used in:     C++ application development   Embedded systems   Game engines   Cross-platform libraries   Large-scale enterprise software   Open-source projects     Why Use CMake?  Traditional Makefiles become difficult to maintain as projects grow. CMake solves this by providing:                 Feature       Benefit                       Cross-platform support       Build on Linux, Windows, macOS                 Compiler independence       Works with GCC, Clang, MSVC                 Dependency management       Easier integration with libraries                 Scalable structure       Better organization for large projects                 IDE integration       Generates Visual Studio, Ninja, Makefiles             Installing CMake  Linux (Ubuntu/Debian)  sudo apt update sudo apt install cmake   Mac OS  brew install cmake   Windows (Ubuntu/Debian)  https://cmake.org/download/   Verify Installation  cmake --version"
+    "content": "Getting Started with CMake https://rajmahto9876.github.io/Blog/ Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms and compilers. Instead of writing separate build scripts for Linux, Windows, or macOS, you write a single CMakeLists.txt file and let CMake generate the appropriate build files.  It is widely used in:     C++ application development   Embedded systems   Game engines   Cross-platform libraries   Large-scale enterprise software   Open-source projects     Why Use CMake?  Traditional Makefiles become difficult to maintain as projects grow. CMake solves this by providing:                 Feature       Benefit                       Cross-platform support       Build on Linux, Windows, macOS                 Compiler independence       Works with GCC, Clang, MSVC                 Dependency management       Easier integration with libraries                 Scalable structure       Better organization for large projects                 IDE integration       Generates Visual Studio, Ninja, Makefiles             Installing CMake  Linux (Ubuntu/Debian)  sudo apt update sudo apt install cmake   Mac OS  brew install cmake   Windows (Ubuntu/Debian)  https://cmake.org/download/   Verify Installation  cmake --version"
   },
   
   {
     "title": "Driver Development Setup",
     "url": "/Blog/posts/linux-processes/",
-    "categories": "Linux Driver Development",
+    "categories": "Linux-Driver-Development",
     "tags": "linux",
     "date": "2026-04-22 00:00:00 +0530",
     "content": "Content about Linux…"

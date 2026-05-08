@@ -2,11 +2,11 @@
 title: CMake Beginner Guide
 date: 2026-04-23
 categories: [Cmake]
-tags: [cmake]
+tags: [cmake, Set-up]
 ---
 
 # Getting Started with CMake
-
+https://rajmahto9876.github.io/Blog/
 ## Introduction
 
 When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where **CMake** becomes essential.
