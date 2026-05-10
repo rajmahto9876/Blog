@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-05-08T20:17:17+05:30</updated>
+  <updated>2026-05-10T10:27:37+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -20,11 +20,35 @@
 
   
   <entry>
+    <title>CMake Passing Params</title>
+    <link href="http://localhost:4000/Blog/posts/cmake-passing-params/" rel="alternate" type="text/html" title="CMake Passing Params" />
+    <published>2026-05-10T00:00:00+05:30</published>
+  
+    <updated>2026-05-10T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/Blog/posts/cmake-passing-params/</id>
+    <content type="text/html" src="http://localhost:4000/Blog/posts/cmake-passing-params/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="Cmake" />
+    
+  
+
+  <summary>Passing Parameters from CMake to C/C++ Code  One of the powerful features of CMake is the ability to pass configuration values directly into source code during build time.  This is useful for:     Build versioning   Debug flags   Feature toggles   Platform-specific settings   API endpoints   Compile-time configurations     Project Structure  parameter-demo/ ├── CMakeLists.txt └── main.cpp     E...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>CMake First Project</title>
     <link href="http://localhost:4000/Blog/posts/cmake-first-project/" rel="alternate" type="text/html" title="CMake First Project" />
     <published>2026-05-08T00:00:00+05:30</published>
   
-    <updated>2026-05-08T00:00:00+05:30</updated>
+    <updated>2026-05-08T20:18:04+05:30</updated>
   
     <id>http://localhost:4000/Blog/posts/cmake-first-project/</id>
     <content type="text/html" src="http://localhost:4000/Blog/posts/cmake-first-project/" />
@@ -111,30 +135,6 @@
   
 
   <summary>Architecture Overview  Modern computing is largely shaped by two dominant processor architectures: ARM (RISC) and x86 (CISC). While both are designed to execute instructions and run applications, they follow fundamentally different design philosophies.  ARM (Reduced Instruction Set Computing) focuses on simplicity and efficiency. It uses a smaller, fixed set of instructions that can be executed...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>CMake Beginner Guide</title>
-    <link href="http://localhost:4000/Blog/posts/cmake-guide/" rel="alternate" type="text/html" title="CMake Beginner Guide" />
-    <published>2026-04-23T00:00:00+05:30</published>
-  
-    <updated>2026-05-08T20:11:03+05:30</updated>
-  
-    <id>http://localhost:4000/Blog/posts/cmake-guide/</id>
-    <content type="text/html" src="http://localhost:4000/Blog/posts/cmake-guide/" />
-    <author>
-      <name>rajmahto9876</name>
-    </author>
-
-  
-    
-    <category term="Cmake" />
-    
-  
-
-  <summary>Getting Started with CMake https://rajmahto9876.github.io/Blog/ Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where CMake becomes essential.  CMake is an open-source build system generator that helps developers automate the compilation process across different platforms...</summary>
 
   </entry>
 
