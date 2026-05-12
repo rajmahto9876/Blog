@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="CMake First Project" />
+<meta property="og:title" content="Memory-Leak tool Valgrind" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Creating Your First CMake Project" />
-<meta property="og:description" content="Creating Your First CMake Project" />
-<link rel="canonical" href="http://localhost:4000/Blog/posts/cmake-first-project/" />
-<meta property="og:url" content="http://localhost:4000/Blog/posts/cmake-first-project/" />
+<meta name="description" content="Understanding Valgrind" />
+<meta property="og:description" content="Understanding Valgrind" />
+<link rel="canonical" href="http://localhost:4000/Blog/posts/debugging-tools/" />
+<meta property="og:url" content="http://localhost:4000/Blog/posts/debugging-tools/" />
 <meta property="og:site_name" content="rajMahto_dev" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-05-08T00:00:00+05:30" />
+<meta property="article:published_time" content="2026-05-12T00:00:00+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="CMake First Project" />
+<meta property="twitter:title" content="Memory-Leak tool Valgrind" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-08T20:18:04+05:30","datePublished":"2026-05-08T00:00:00+05:30","description":"Creating Your First CMake Project","headline":"CMake First Project","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/cmake-first-project/"},"url":"http://localhost:4000/Blog/posts/cmake-first-project/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-12T00:00:00+05:30","datePublished":"2026-05-12T00:00:00+05:30","description":"Understanding Valgrind","headline":"Memory-Leak tool Valgrind","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/debugging-tools/"},"url":"http://localhost:4000/Blog/posts/debugging-tools/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>CMake First Project | rajMahto_dev</title>
+  <title>Memory-Leak tool Valgrind | rajMahto_dev</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -439,7 +439,7 @@
         
           
             
-              <span>CMake First Project</span>
+              <span>Memory-Leak tool Valgrind</span>
             
 
           
@@ -573,61 +573,6 @@
 
       
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
 
     
   
@@ -635,38 +580,6 @@
   
   
 
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-    
-
-    
   
 
   
@@ -695,7 +608,7 @@
 
 <article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>CMake First Project</h1>
+    <h1 data-toc-skip>Memory-Leak tool Valgrind</h1>
     
 
     <div class="post-meta text-muted">
@@ -712,41 +625,18 @@
 
 <time
   
-  data-ts="1778178600"
+  data-ts="1778524200"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  May  8, 2026
+  May 12, 2026
 </time>
 
       </span>
 
       <!-- lastmod date -->
-      
-        <span>
-          Updated
-          <!--
-  Date format snippet
-  See: ${JS_ROOT}/modules/components/locale-datetime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1778251684"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  May  8, 2026
-</time>
-
-        </span>
       
 
       
@@ -790,9 +680,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="160 words"
+  title="589 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
         </div>
       </div>
@@ -801,7 +691,7 @@
 
   
     <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
-      <span class="label text-truncate">CMake First Project</span>
+      <span class="label text-truncate">Memory-Leak tool Valgrind</span>
       <button type="button" class="toc-trigger btn me-1">
         <i class="fa-solid fa-list-ul fa-fw"></i>
       </button>
@@ -814,7 +704,7 @@
 
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
-        <div class="label text-truncate py-2 ms-4">CMake First Project</div>
+        <div class="label text-truncate py-2 ms-4">Memory-Leak tool Valgrind</div>
         <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
           <i class="fas fa-close"></i>
         </button>
@@ -824,25 +714,68 @@
   
 
   <div class="content">
-    <h1 id="creating-your-first-cmake-project">Creating Your First CMake Project</h1>
+    <h1 id="understanding-valgrind">Understanding Valgrind</h1>
 
-<h2 id="project-structure"><span class="me-2">Project Structure</span><a href="#project-structure" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Memory management is one of the most important parts of C and C++ programming.
+Unlike other higher-level languages, developers are responsible for manually allocating and freeing memory. This creates serious bugs if left unchecked. Some of these are as follows:</p>
 
-<div class="language-text highlighter-rouge"><div class="code-header">
-        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
+<ul>
+  <li>Memory leaks</li>
+  <li>Invalid memory access</li>
+  <li>Use-after-free errors</li>
+  <li>Uninitialized variable usage</li>
+</ul>
+
+<p>To help detect these issues, a commonly used tool <strong>Valgrind</strong> comes into play</p>
+
+<hr />
+
+<h1 id="what-is-valgrind">What is Valgrind?</h1>
+
+<p>Valgrind is a programming tool used for:</p>
+
+<ul>
+  <li>Memory debugging</li>
+  <li>Memory leak detection</li>
+  <li>Profiling Linux applications</li>
+</ul>
+
+<p>It runs your program in a virtual environment and monitors how memory is allocated and accessed during execution.</p>
+
+<p>Valgrind is especially useful in:</p>
+
+<ul>
+  <li>Systems programming</li>
+  <li>Embedded Linux development</li>
+  <li>C/C++ backend applications</li>
+  <li>Low-level debugging</li>
+</ul>
+
+<hr />
+
+<h1 id="installing-valgrind">Installing Valgrind</h1>
+
+<p>On Ubuntu/Debian:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-</pre></td><td class="rouge-code"><pre>hello/
-├── CMakeLists.txt
-└── main.cpp
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt <span class="nb">install </span>valgrind
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Verify installation:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>valgrind <span class="nt">--version</span>
 </pre></td></tr></tbody></table></code></div></div>
 
 <hr />
 
-<h1 id="writing-the-source-code">Writing the Source Code</h1>
+<h1 id="example-memory-leak">Example: Memory Leak</h1>
 
-<h2 id="maincpp"><span class="me-2">main.cpp</span><a href="#maincpp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Consider the following program:</p>
 
 <div class="language-cpp highlighter-rouge"><div class="code-header">
         <span data-label-text="Cpp"><i class="fas fa-code fa-fw small"></i></span>
@@ -853,135 +786,238 @@
 5
 6
 7
+8
+9
+10
 </pre></td><td class="rouge-code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span>
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello CMake Build!"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+    <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Value: "</span> <span class="o">&lt;&lt;</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
+<p>At first glance, the program looks correct.</p>
+
+<p>However, there is a problem:</p>
+
+<div class="language-cpp highlighter-rouge"><div class="code-header">
+        <span data-label-text="Cpp"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="k">delete</span><span class="p">[]</span> <span class="n">data</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>was never called.</p>
+
+<p>This creates a <strong>memory leak</strong>.</p>
+
 <hr />
 
-<h1 id="creating-the-cmakeliststxt-file">Creating the CMakeLists.txt File</h1>
+<h1 id="compiling-the-program">Compiling the Program</h1>
+
+<p>Compile with debugging symbols enabled:</p>
 
 <div class="language-bash highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">touch </span>CMakeLists.txt
+</pre></td><td class="rouge-code"><pre>g++ <span class="nt">-g</span> main.cpp <span class="nt">-o</span> app
 </pre></td></tr></tbody></table></code></div></div>
-<h2 id="cmakeliststxt"><span class="me-2">CMakeLists.txt</span><a href="#cmakeliststxt" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<div class="language-cmake highlighter-rouge"><div class="code-header">
-        <span data-label-text="Cmake"><i class="fas fa-code fa-fw small"></i></span>
+<p>The <code class="language-plaintext highlighter-rouge">-g</code> flag allows compiler to include debug symbols which is used by Valgrind to provide detailed debugging information.</p>
+
+<hr />
+
+<h1 id="running-with-valgrind">Running with Valgrind</h1>
+
+<p>Execute the program using:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>valgrind <span class="nt">--leak-check</span><span class="o">=</span>full <span class="nt">--tool</span><span class="o">=</span>memcheck ./app
+</pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<h1 id="sample-output">Sample Output</h1>
+
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-</pre></td><td class="rouge-code"><pre><span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.10<span class="p">)</span>
-<span class="nb">project</span><span class="p">(</span>Hello<span class="p">)</span>
-<span class="nb">add_executable</span><span class="p">(</span>hello main.cpp<span class="p">)</span>
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>==6836== 
+==6836== HEAP SUMMARY:
+==6836==     in use at exit: 40 bytes in 1 blocks
+==6836==   total heap usage: 4 allocs, 3 frees, 73,772 bytes allocated
+==6836== 
+==6836== 40 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==6836==    at 0x483C583: operator new[](unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==6836==    by 0x109499: main (01_Memory_Layout.cpp:34)
+==6836== 
+==6836== LEAK SUMMARY:
+==6836==    definitely lost: 40 bytes in 1 blocks
+==6836==    indirectly lost: 0 bytes in 0 blocks
+==6836==      possibly lost: 0 bytes in 0 blocks
+==6836==    still reachable: 0 bytes in 0 blocks
+==6836==         suppressed: 0 bytes in 0 blocks
+
 </pre></td></tr></tbody></table></code></div></div>
 
-<hr />
-
-<h1 id="understanding-the-commands">Understanding the Commands</h1>
-
-<h2 id="cmake_minimum_required"><span class="me-2"><code class="language-plaintext highlighter-rouge">cmake_minimum_required()</code></span><a href="#cmake_minimum_required" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Defines the minimum required CMake version.</p>
-
-<div class="language-cmake highlighter-rouge"><div class="code-header">
-        <span data-label-text="Cmake"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">cmake_minimum_required</span><span class="p">(</span>VERSION 3.10<span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<hr />
-
-<h2 id="project"><span class="me-2"><code class="language-plaintext highlighter-rouge">project()</code></span><a href="#project" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Defines the project name.</p>
-
-<div class="language-cmake highlighter-rouge"><div class="code-header">
-        <span data-label-text="Cmake"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">project</span><span class="p">(</span>Hello<span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
-
-<hr />
-
-<h2 id="add_executable"><span class="me-2"><code class="language-plaintext highlighter-rouge">add_executable()</code></span><a href="#add_executable" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<p>Creates an executable target.</p>
-
-<div class="language-cmake highlighter-rouge"><div class="code-header">
-        <span data-label-text="Cmake"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="nb">add_executable</span><span class="p">(</span>hello main.cpp<span class="p">)</span>
-</pre></td></tr></tbody></table></code></div></div>
+<p>Valgrind clearly shows:</p>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">hello</code> → executable name</li>
-  <li><code class="language-plaintext highlighter-rouge">main.cpp</code> → source file</li>
+  <li>Memory was allocated</li>
+  <li>Memory was never released</li>
+  <li>The exact location of the leak</li>
 </ul>
 
 <hr />
 
-<h1 id="building-the-project">Building the Project</h1>
+<h1 id="fixing-the-issue">Fixing the Issue</h1>
 
-<h2 id="step-1-create-build-directory"><span class="me-2">Step 1: Create Build Directory</span><a href="#step-1-create-build-directory" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Corrected version:</p>
 
-<hr />
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>cmake <span class="nt">-B</span> outputDir
-</pre></td></tr></tbody></table></code></div></div>
-<p>Generate build files in a separate directory (out-of-source outputDir).
-CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.txt</code> file from the parent directory and generates platform-specific build files.</p>
-
-<hr />
-
-<h2 id="step-2-compile-the-project"><span class="me-2">Step 2: Compile the Project</span><a href="#step-2-compile-the-project" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
-      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>cmake <span class="nt">--build</span> outputDir
-</pre></td></tr></tbody></table></code></div></div>
-
-<hr />
-
-<h2 id="step-3-run-the-program"><span class="me-2">Step 3: Run the Program</span><a href="#step-3-run-the-program" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-
-<h3 id="linuxmacos"><span class="me-2">Linux/macOS</span><a href="#linuxmacos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-
-<div class="language-bash highlighter-rouge"><div class="code-header">
-        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+<div class="language-cpp highlighter-rouge"><div class="code-header">
+        <span data-label-text="Cpp"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
-</pre></td><td class="rouge-code"><pre><span class="nb">cd </span>outputDir
-./hello
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span><span class="o">*</span> <span class="n">data</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="mi">10</span><span class="p">];</span>
+
+    <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Value: "</span> <span class="o">&lt;&lt;</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="k">delete</span><span class="p">[]</span> <span class="n">data</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<h3 id="windows"><span class="me-2">Windows</span><a href="#windows" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<hr />
-<p>Go to outputDir</p>
-<div class="language-powershell highlighter-rouge"><div class="code-header">
-        <span data-label-text="Powershell"><i class="fas fa-code fa-fw small"></i></span>
+<p>Now rerun Valgrind:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="n">hello.exe</span><span class="w">
-</span></pre></td></tr></tbody></table></code></div></div>
-<hr />
+</pre></td><td class="rouge-code"><pre>valgrind <span class="nt">--leak-check</span><span class="o">=</span>full <span class="nt">--tool</span><span class="o">=</span>memcheck ./app
+</pre></td></tr></tbody></table></code></div></div>
+
 <p>Output:</p>
 
 <div class="language-text highlighter-rouge"><div class="code-header">
         <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre>Hello from CMake!
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>==6970== HEAP SUMMARY:
+==6970==     in use at exit: 0 bytes in 0 blocks
+==6970==   total heap usage: 4 allocs, 4 frees, 73,772 bytes allocated
+==6970== 
+==6970== All heap blocks were freed -- no leaks are possible
+
 </pre></td></tr></tbody></table></code></div></div>
+
+<hr />
+
+<h1 id="common-issues-detected-by-valgrind">Common Issues Detected by Valgrind</h1>
+
+<h2 id="1-memory-leaks"><span class="me-2">1. Memory Leaks</span><a href="#1-memory-leaks" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Memory allocated but never released.</p>
+
+<h2 id="2-invalid-readswrites"><span class="me-2">2. Invalid Reads/Writes</span><a href="#2-invalid-readswrites" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Accessing memory outside allocated bounds.</p>
+
+<p>Example:</p>
+
+<p><code class="language-plaintext highlighter-rouge">cpp id="k4fv7m"
+int arr[5];
+arr[10] = 100;
+</code></p>
+
+<h2 id="3-use-after-free"><span class="me-2">3. Use After Free</span><a href="#3-use-after-free" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Using memory after it has already been freed.</p>
+
+<h2 id="4-uninitialized-variables"><span class="me-2">4. Uninitialized Variables</span><a href="#4-uninitialized-variables" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Using variables before assigning values.</p>
+
+<hr />
+
+<h1 id="why-valgrind-matters">Why Valgrind Matters</h1>
+
+<p>Memory-related bugs are often difficult to detect because:</p>
+
+<ul>
+  <li>Programs may still compile successfully</li>
+  <li>Crashes can happen randomly</li>
+  <li>Errors may only appear under heavy workloads</li>
+</ul>
+
+<p>Valgrind helps developers identify these issues early.</p>
+
+<p>Benefits:</p>
+
+<ul>
+  <li>Better code reliability</li>
+  <li>Easier debugging</li>
+  <li>Improved application stability</li>
+  <li>Safer memory management</li>
+</ul>
+
+<hr />
+
+<h1 id="limitations-of-valgrind">Limitations of Valgrind</h1>
+
+<p>Although powerful, Valgrind has some limitations:</p>
+
+<ul>
+  <li>Slower program execution during analysis</li>
+  <li>Linux-focused</li>
+  <li>Less effective for heavily optimized binaries</li>
+</ul>
+
+<hr />
 
   </div>
 
@@ -991,7 +1027,7 @@ CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.tx
       <div class="post-meta mb-3">
         <i class="far fa-folder-open fa-fw me-1"></i>
         
-          <a href="/Blog/categories/cmake/">Cmake</a>
+          <a href="/Blog/categories/debug/">Debug</a>
       </div>
     
 
@@ -1001,14 +1037,14 @@ CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.tx
         <i class="fa fa-tags fa-fw me-1"></i>
         
           <a
-            href="/Blog/tags/cmake/"
+            href="/Blog/tags/debug/"
             class="post-tag no-text-decoration"
-          >cmake</a>
+          >Debug</a>
         
           <a
-            href="/Blog/tags/first/"
+            href="/Blog/tags/memory-leak/"
             class="post-tag no-text-decoration"
-          >First</a>
+          >Memory-Leak</a>
         
       </div>
     
@@ -1044,14 +1080,14 @@ CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.tx
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=CMake%20First%20Project%20-%20rajMahto_dev&url=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Fcmake-first-project%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Memory-Leak%20tool%20Valgrind%20-%20rajMahto_dev&url=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Fdebugging-tools%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=CMake%20First%20Project%20-%20rajMahto_dev&u=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Fcmake-first-project%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Memory-Leak%20tool%20Valgrind%20-%20rajMahto_dev&u=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Fdebugging-tools%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
@@ -1625,30 +1661,7 @@ CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.tx
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
 
 
@@ -1658,71 +1671,6 @@ CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.tx
 
 
 
-
-
-  <aside id="related-posts" aria-labelledby="related-label">
-    <h3 class="mb-4" id="related-label">Further Reading</h3>
-    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
-      
-        <article class="col">
-          <a href="/Blog/posts/cmake-passing-params/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/modules/components/locale-datetime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1778351400"
-  data-df="ll"
-  
->
-  May 10, 2026
-</time>
-
-              <h4 class="pt-0 my-2">CMake Passing Params</h4>
-              <div class="text-muted">
-                <p>Passing Parameters from CMake to C/C++ Code  One of the powerful features of CMake is the ability to pass configuration values directly into source code during build time.  This is useful for:     ...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-        <article class="col">
-          <a href="/Blog/posts/cmake-guide/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/modules/components/locale-datetime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1776882600"
-  data-df="ll"
-  
->
-  Apr 23, 2026
-</time>
-
-              <h4 class="pt-0 my-2">CMake Beginner Guide</h4>
-              <div class="text-muted">
-                <p>Getting Started with CMake https://rajmahto9876.github.io/Blog/ Introduction  When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibilit...</p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
-    </nav>
-  </aside>
-  <!-- #related-posts -->
 
 
             
@@ -1735,22 +1683,18 @@ CMake reads the <code class="language-plaintext highlighter-rouge">CMakeLists.tx
 
   
     <a
-      href="/Blog/posts/linux-internals/"
+      href="/Blog/posts/cmake-passing-params/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Process vs Threads</p>
+      <p>CMake Passing Params</p>
     </a>
   
 
   
-    <a
-      href="/Blog/posts/cmake-passing-params/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>CMake Passing Params</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 

@@ -8,6 +8,12 @@ order: 2
 
 [Resume]({{ '/assets/Resume.pdf' | relative_url }})
 
+### Education
+- 	M.Tech: National Institute of Technology, Warangal (NITW)<br>
+			Control and Automation.
+- 	B.Tech: MAharaja Agrasen Institute of Technology, Delhi<br>
+			Electrical and Electronics Engineering.
+
 ### Skills
 - 	Programming Languages: Embedded C, C++, Python.
 - 	Embedded Systems: Bare-metal, Startup code, SoC Bring-up, Board-Bring Up

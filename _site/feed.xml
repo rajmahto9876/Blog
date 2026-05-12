@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-05-10T21:12:06+05:30</updated>
+  <updated>2026-05-12T14:48:42+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -17,6 +17,30 @@
   <icon>/Blog/assets/img/favicons/favicon.ico</icon>
   <logo>/Blog/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Memory-Leak tool Valgrind</title>
+    <link href="http://localhost:4000/Blog/posts/debugging-tools/" rel="alternate" type="text/html" title="Memory-Leak tool Valgrind" />
+    <published>2026-05-12T00:00:00+05:30</published>
+  
+    <updated>2026-05-12T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/Blog/posts/debugging-tools/</id>
+    <content type="text/html" src="http://localhost:4000/Blog/posts/debugging-tools/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="Debug" />
+    
+  
+
+  <summary>Understanding Valgrind  Memory management is one of the most important parts of C and C++ programming. Unlike other higher-level languages, developers are responsible for manually allocating and freeing memory. This creates serious bugs if left unchecked. Some of these are as follows:     Memory leaks   Invalid memory access   Use-after-free errors   Uninitialized variable usage   To help detec...</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>Introduction to ARM Registers Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM.  The ARM architecture is a Load-Store architecture. This means data must be moved from memory into a register before it can be processed. Once processed, the result is stored back into memory from the r...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>ARM Architecture Overview</title>
-    <link href="http://localhost:4000/Blog/posts/arm-architecture/" rel="alternate" type="text/html" title="ARM Architecture Overview" />
-    <published>2026-04-27T00:00:00+05:30</published>
-  
-    <updated>2026-05-08T20:11:03+05:30</updated>
-  
-    <id>http://localhost:4000/Blog/posts/arm-architecture/</id>
-    <content type="text/html" src="http://localhost:4000/Blog/posts/arm-architecture/" />
-    <author>
-      <name>rajmahto9876</name>
-    </author>
-
-  
-    
-    <category term="arm" />
-    
-  
-
-  <summary>Architecture Overview  Modern computing is largely shaped by two dominant processor architectures: ARM (RISC) and x86 (CISC). While both are designed to execute instructions and run applications, they follow fundamentally different design philosophies.  ARM (Reduced Instruction Set Computing) focuses on simplicity and efficiency. It uses a smaller, fixed set of instructions that can be executed...</summary>
 
   </entry>
 
