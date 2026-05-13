@@ -30,24 +30,24 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Driver Development Setup" />
+<meta property="og:title" content="Cross Compiler (beaglebone)" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Content about Linux…" />
-<meta property="og:description" content="Content about Linux…" />
+<meta name="description" content="Cross Compiling Linux Kernel for beaglebone Black Building and compiling the Linux kernel for embedded systems is one of the most important skills in Embedded Linux development. In this blog, we will walk through the complete process of:" />
+<meta property="og:description" content="Cross Compiling Linux Kernel for beaglebone Black Building and compiling the Linux kernel for embedded systems is one of the most important skills in Embedded Linux development. In this blog, we will walk through the complete process of:" />
 <link rel="canonical" href="http://localhost:4000/Blog/posts/linux-processes/" />
 <meta property="og:url" content="http://localhost:4000/Blog/posts/linux-processes/" />
 <meta property="og:site_name" content="rajMahto_dev" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-04-22T00:00:00+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Driver Development Setup" />
+<meta property="twitter:title" content="Cross Compiler (beaglebone)" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-08T20:18:04+05:30","datePublished":"2026-04-22T00:00:00+05:30","description":"Content about Linux…","headline":"Driver Development Setup","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/linux-processes/"},"url":"http://localhost:4000/Blog/posts/linux-processes/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-05-08T20:18:04+05:30","datePublished":"2026-04-22T00:00:00+05:30","description":"Cross Compiling Linux Kernel for beaglebone Black Building and compiling the Linux kernel for embedded systems is one of the most important skills in Embedded Linux development. In this blog, we will walk through the complete process of:","headline":"Cross Compiler (beaglebone)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Blog/posts/linux-processes/"},"url":"http://localhost:4000/Blog/posts/linux-processes/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Driver Development Setup | rajMahto_dev</title>
+  <title>Cross Compiler (beaglebone) | rajMahto_dev</title>
 
   <!--
   The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
@@ -207,9 +207,16 @@
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/combine/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/glightbox@3.3.0/dist/js/glightbox.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.20/dayjs.min.js,npm/dayjs@1.11.20/locale/en.js,npm/dayjs@1.11.20/plugin/relativeTime.js,npm/dayjs@1.11.20/plugin/localizedFormat.js,npm/tocbot@4.36.4/dist/tocbot.min.js"></script>
 
 
 
@@ -432,7 +439,7 @@
         
           
             
-              <span>Driver Development Setup</span>
+              <span>Cross Compiler (beaglebone)</span>
             
 
           
@@ -515,6 +522,93 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
+
+    
+  
 
   
   
@@ -545,9 +639,9 @@
 
 
 
-<article class="px-1" data-toc="false">
+<article class="px-1" data-toc="true">
   <header>
-    <h1 data-toc-skip>Driver Development Setup</h1>
+    <h1 data-toc-skip>Cross Compiler (beaglebone)</h1>
     
 
     <div class="post-meta text-muted">
@@ -642,9 +736,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="3 words"
+  title="530 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
         </div>
       </div>
@@ -652,9 +746,294 @@
   </header>
 
   
+    <div id="toc-bar" class="d-flex align-items-center justify-content-between invisible">
+      <span class="label text-truncate">Cross Compiler (beaglebone)</span>
+      <button type="button" class="toc-trigger btn me-1">
+        <i class="fa-solid fa-list-ul fa-fw"></i>
+      </button>
+    </div>
+
+    <button id="toc-solo-trigger" type="button" class="toc-trigger btn btn-outline-secondary btn-sm">
+      <span class="label ps-2 pe-1">Contents</span>
+      <i class="fa-solid fa-angle-right fa-fw"></i>
+    </button>
+
+    <dialog id="toc-popup" class="p-0">
+      <div class="header d-flex flex-row align-items-center justify-content-between">
+        <div class="label text-truncate py-2 ms-4">Cross Compiler (beaglebone)</div>
+        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
+          <i class="fas fa-close"></i>
+        </button>
+      </div>
+      <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
+    </dialog>
+  
 
   <div class="content">
-    <p>Content about Linux…</p>
+    <h1 id="cross-compiling-linux-kernel-for-beaglebone-black">Cross Compiling Linux Kernel for beaglebone Black</h1>
+<p>Building and compiling the Linux kernel for embedded systems is one of the most important skills in Embedded Linux development. In this blog, we will walk through the complete process of:</p>
+
+<ul>
+  <li>Setting up dependencies</li>
+  <li>Downloading the ARM cross compiler</li>
+  <li>Fetching beaglebone Linux source</li>
+  <li>Building Kernel Image and Device Trees</li>
+  <li>Building Kernel Modules</li>
+  <li>Fixing common compilation issues</li>
+</ul>
+
+<h1 id="why-cross-compilation">Why Cross Compilation?</h1>
+
+<p>beaglebone Black uses an ARM processor, while most development machines use x86_64 architecture. Instead of compiling directly on the board (which is slow), we compile on the host machine using an ARM cross compiler.</p>
+
+<p>This process is called:</p>
+<blockquote>
+  <p><strong>Cross Compilation</strong></p>
+</blockquote>
+
+<hr />
+
+<h1 id="system-requirements">System Requirements</h1>
+
+<h2 id="install-required-dependencies"><span class="me-2">Install Required Dependencies</span><a href="#install-required-dependencies" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>apt <span class="nb">install </span>build-essential libncurses-dev gawk flex bison <span class="se">\</span>
+openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev <span class="se">\</span>
+libiberty-dev autoconf llvm lzop u-boot-tools
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="download-arm-cross-compiler">Download ARM Cross Compiler</h1>
+<p>Install Linaro ARM toolchain for cross compilation.</p>
+
+<hr />
+<h1 id="toolchain-download">Toolchain Download</h1>
+<p>Download the ARM GNU Toolchain from the official Linaro release page:</p>
+
+<pre><code class="language-link">https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/
+</code></pre>
+<p>or</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>wget https://releases.linaro.org/components/toolchain/binaries/7.5-2019.12/arm-linux-gnueabihf/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+</pre></td></tr></tbody></table></code></div></div>
+<hr />
+
+<h1 id="compiler-package">Compiler Package</h1>
+<div class="language-text highlighter-rouge"><div class="code-header">
+        <span data-label-text="Text"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+tar -xf gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf.tar.xz
+</pre></td></tr></tbody></table></code></div></div>
+<h1 id="add-toolchain-to-path">Add Toolchain to PATH</h1>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:<span class="nv">$PWD</span>/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin
+</pre></td></tr></tbody></table></code></div></div>
+<p>To make it permanent:</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nb">echo</span> <span class="s1">'export PATH=$PATH:$HOME/gcc-linaro-7.5.0-2019.12-x86_64_arm-linux-gnueabihf/bin'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="verify-installation">Verify Installation</h1>
+<p>Check if the compiler is properly installed or not</p>
+
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>arm-linux-gnueabihf-gcc <span class="nt">--version</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>Expected output:</p>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>arm-linux-gnueabihf-gcc <span class="o">(</span>Linaro GCC 7.5-2019.12<span class="o">)</span> 7.5.0
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="connect-to-beaglebone">Connect to beaglebone</h1>
+<div class="language-bash highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ssh <span class="nt">-x</span> debian@192.168.7.2
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Check running kernel version:</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">uname</span> <span class="nt">-r</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Output:</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>4.19.94-ti-r42
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="clone-beaglebone-linux-repository">Clone beaglebone Linux Repository</h1>
+<p>The beaglebone Linux kernel is maintained here:</p>
+
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>git clone https://github.com/beagleboard/linux.git
+<span class="nb">cd </span>linux
+git checkout 4.19.94-ti-r42
+</pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="compilation-steps">Compilation Steps</h1>
+
+<h2 id="step-1-clean-previous-builds-"><span class="me-2">Step 1: Clean Previous Builds :</span><a href="#step-1-clean-previous-builds-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Removes all the temporary folder, object files, images    generated during the previous build. This step also deletes the .config file
+if created previously.</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>make <span class="nv">ARCH</span><span class="o">=</span>arm distclean
+</pre></td></tr></tbody></table></code></div></div>
+<h2 id="step-2-load-default-beaglebone-configuration"><span class="me-2">Step 2: Load Default beaglebone Configuration</span><a href="#step-2-load-default-beaglebone-configuration" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>This creates a default kernel configuration file (.config)</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>make <span class="nv">ARCH</span><span class="o">=</span>arm bb.org_defconfig
+</pre></td></tr></tbody></table></code></div></div>
+<h2 id="step-3-optional-kernel-configuration-"><span class="me-2">Step 3: Optional Kernel Configuration <br /></span><a href="#step-3-optional-kernel-configuration-" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Use this step if you want to:
+Enable drivers, Disable features, Modify kernel options</p>
+
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabihf- menuconfig
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="step-4-build-kernel-image-and-device-trees"><span class="me-2">Step 4: Build Kernel Image and Device Trees</span><a href="#step-4-build-kernel-image-and-device-trees" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>This stage compiles: Linux Kernel, Device Tree Blobs (DTBs), Kernel image (uImage)</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabihf- uImage dtbs <span class="nv">LOADADDR</span><span class="o">=</span>0x80008000 <span class="nt">-j4</span>
+</pre></td></tr></tbody></table></code></div></div>
+<p>Understanding Build Parameters</p>
+
+<div class="table-wrapper"><table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ARCH=arm</code></td>
+      <td>Specifies the target architecture as ARM.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CROSS_COMPILE=</code></td>
+      <td>Prefix used for the ARM cross-compilation toolchain.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">uImage</code></td>
+      <td>Generates a U-Boot compatible Linux kernel image.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dtbs</code></td>
+      <td>Compiles Device Tree Source files into Device Tree Blobs (<code class="language-plaintext highlighter-rouge">.dtb</code>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">LOADADDR</code></td>
+      <td>Defines the kernel load address in memory.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-j4</code></td>
+      <td>Enables parallel compilation using 4 CPU cores for faster builds.</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="step-5-build-kernel-modules"><span class="me-2">Step 5: Build Kernel Modules</span><a href="#step-5-build-kernel-modules" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>This builds all loadable kernel modules (.ko files).</p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>make <span class="nv">ARCH</span><span class="o">=</span>arm <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabihf- modules <span class="nt">-j4</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="step-6-install-kernel-modules"><span class="me-2">Step 6: Install Kernel Modules</span><a href="#step-6-install-kernel-modules" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>This installs modules into: /lib/modules/<kernel-version></kernel-version></p>
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nb">sudo </span>make <span class="nv">ARCH</span><span class="o">=</span>arm modules_install
+</pre></td></tr></tbody></table></code></div></div>
+
+<div class="language-shell highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>Expected Output: After successful compilation, important outputs include:
+
+Output	Description
+uImage	Linux kernel image
+zImage	Compressed kernel image
+<span class="k">*</span>.dtb	Device Tree Blobs
+<span class="k">*</span>.ko	Kernel modules
+Common Compilation Error
+</pre></td></tr></tbody></table></code></div></div>
+<h1 id="fix-error-specifically-for-this-branch">Fix Error (specifically for this branch)</h1>
+
+<p>Sometimes kernel compilation fails because of:
+scripts/dtc/dtc-lexel.lex.c</p>
+
+<p>Error occurs near:</p>
+<div class="language-c highlighter-rouge"><div class="code-header">
+        <span data-label-text="C"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="rouge-code"><pre><span class="n">YYLTYPE</span> <span class="n">yylloc</span><span class="p">;</span>
+
+<span class="n">Fix</span> <span class="k">for</span> <span class="n">Compilation</span> <span class="n">Error</span>
+<span class="n">File</span>
+<span class="n">scripts</span><span class="o">/</span><span class="n">dtc</span><span class="o">/</span><span class="n">dtc</span><span class="o">-</span><span class="n">lexel</span><span class="p">.</span><span class="n">lex</span><span class="p">.</span><span class="n">c</span>
+<span class="n">Around</span> <span class="n">Line</span> <span class="mi">629</span>
+<span class="n">Replace</span><span class="o">:</span>
+<span class="n">YYLTYPE</span> <span class="n">yylloc</span><span class="p">;</span>
+<span class="n">With</span><span class="o">:</span>
+<span class="k">extern</span> <span class="n">YYLTYPE</span> <span class="n">yylloc</span><span class="p">;</span>
+</pre></td></tr></tbody></table></code></div></div>
 
   </div>
 
@@ -677,6 +1056,16 @@
             href="/Blog/tags/linux/"
             class="post-tag no-text-decoration"
           >linux</a>
+        
+          <a
+            href="/Blog/tags/setup/"
+            class="post-tag no-text-decoration"
+          >Setup</a>
+        
+          <a
+            href="/Blog/tags/cross-compiler/"
+            class="post-tag no-text-decoration"
+          >Cross-Compiler</a>
         
       </div>
     
@@ -712,14 +1101,14 @@
 
       
 
-      <a href="https://twitter.com/intent/tweet?text=Driver%20Development%20Setup%20-%20rajMahto_dev&url=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Flinux-processes%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
+      <a href="https://twitter.com/intent/tweet?text=Cross%20Compiler%20(beaglebone)%20-%20rajMahto_dev&url=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Flinux-processes%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
 
       
 
-      <a href="https://www.facebook.com/sharer/sharer.php?title=Driver%20Development%20Setup%20-%20rajMahto_dev&u=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Flinux-processes%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Cross%20Compiler%20(beaglebone)%20-%20rajMahto_dev&u=http%3A%2F%2Flocalhost%3A4000%2FBlog%2Fposts%2Flinux-processes%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
@@ -774,6 +1163,13 @@
         
         
         <li class="text-truncate lh-lg">
+          <a href="/Blog/posts/home/">Welcome</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/Blog/posts/debugging-tools/">Memory-Leak tool Valgrind</a>
         </li>
       
@@ -788,7 +1184,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/Blog/posts/linux-processes/">Driver Development Setup</a>
+          <a href="/Blog/posts/linux-processes/">Cross Compiler (beaglebone)</a>
         </li>
       
         
@@ -796,13 +1192,6 @@
         
         <li class="text-truncate lh-lg">
           <a href="/Blog/posts/cmake-guide/">CMake Beginner Guide</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/Blog/posts/cmake-first-project/">CMake First Project</a>
         </li>
       
     </ul>
@@ -1221,6 +1610,9 @@
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/basic/">basic</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/cross-compiler/">Cross-Compiler</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/debug/">Debug</a>
       
         
@@ -1231,9 +1623,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux/">linux</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/memory-leak/">Memory-Leak</a>
       
     </div>
   </section>
@@ -1249,6 +1638,12 @@
 
 
 
+
+  <div class="toc-border-cover z-3"></div>
+  <section id="toc-wrapper" class="invisible position-sticky ps-0 pe-4 pb-4">
+    <h2 class="panel-heading ps-3 pb-2 mb-0">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
@@ -1785,6 +2180,9 @@
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/basic/">basic</a>
       
         
+        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/cross-compiler/">Cross-Compiler</a>
+      
+        
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/debug/">Debug</a>
       
         
@@ -1795,9 +2193,6 @@
       
         
         <a class="post-tag btn btn-outline-primary" href="/Blog/tags/linux/">linux</a>
-      
-        
-        <a class="post-tag btn btn-outline-primary" href="/Blog/tags/memory-leak/">Memory-Leak</a>
       
     </div>
   </section>
