@@ -4,7 +4,7 @@
   <id>http://localhost:4000/Blog/</id>
   <title>rajMahto_dev</title>
   <subtitle>A minimal way to show off something which I work on.</subtitle>
-  <updated>2026-05-13T11:15:00+05:30</updated>
+  <updated>2026-05-16T20:03:38+05:30</updated>
   <author>
     <name>rajmahto9876</name>
     <uri>http://localhost:4000/Blog/</uri>
@@ -17,6 +17,30 @@
   <icon>/Blog/assets/img/favicons/favicon.ico</icon>
   <logo>/Blog/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>BeagleBone GPIO</title>
+    <link href="http://localhost:4000/Blog/posts/beagalbone_gpio/" rel="alternate" type="text/html" title="BeagleBone GPIO" />
+    <published>2026-05-16T00:00:00+05:30</published>
+  
+    <updated>2026-05-16T00:00:00+05:30</updated>
+  
+    <id>http://localhost:4000/Blog/posts/beagalbone_gpio/</id>
+    <content type="text/html" src="http://localhost:4000/Blog/posts/beagalbone_gpio/" />
+    <author>
+      <name>rajmahto9876</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+  
+
+  <summary>This post describes a BeagleBone GPIO project.  About the project     Hardware: BeagleBone board   Feature: GPIO pin control   Status: working project example</summary>
+
+  </entry>
 
   
   <entry>
@@ -111,30 +135,6 @@
   
 
   <summary>Linux Internals — Process vs Thread   Process  Definition  A process is an independent running program with its own memory and resources.  Features     Separate address space   Own PID   Own heap, stack, globals   Heavyweight   Creation  fork();   Example  firefox vim gcc     Thread  Definition  A thread is a lightweight execution unit inside a process.  Features     Shares process memory   Own...</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>Understanding ARM Registers</title>
-    <link href="http://localhost:4000/Blog/posts/arm-register/" rel="alternate" type="text/html" title="Understanding ARM Registers" />
-    <published>2026-05-01T00:00:00+05:30</published>
-  
-    <updated>2026-05-08T20:11:03+05:30</updated>
-  
-    <id>http://localhost:4000/Blog/posts/arm-register/</id>
-    <content type="text/html" src="http://localhost:4000/Blog/posts/arm-register/" />
-    <author>
-      <name>rajmahto9876</name>
-    </author>
-
-  
-    
-    <category term="arm" />
-    
-  
-
-  <summary>Introduction to ARM Registers Registers hold the data and instructions that the processor is currently working on. Understanding how the ARM architecture utilizes registers is important for ARM.  The ARM architecture is a Load-Store architecture. This means data must be moved from memory into a register before it can be processed. Once processed, the result is stored back into memory from the r...</summary>
 
   </entry>
 
