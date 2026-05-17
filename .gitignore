@@ -1,5 +1,30 @@
+# Jekyll build output
 _site/
+
+# Local environment
+.env
+
+# Jekyll/Ruby caches
 .sass-cache/
 .jekyll-cache/
 .bundle/
 vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+*.swp
+*~
+.vscode/
+.idea/
+*.iml
+
+# RubyMine / JetBrains
+out/
+
+# Optional logs/temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
