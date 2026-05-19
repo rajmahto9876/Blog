@@ -354,15 +354,6 @@ make user_app
 ./user_app.o
 ```
 
-### Files to inspect
-----------------
-- Driver entry & IOCTL handling: [main.c](main.c)
-- Drawing helpers & fonts: [ssd1306_helper.c](ssd1306_helper.c)
-- IOCTL payloads and types: [user_ioctl_interface.h](user_ioctl_interface.h)
-- Example client: [user_app.c](user_app.c)
-- Device tree overlay: [ssd1306.dts](ssd1306.dts)
-- Build helpers: [Makefile](Makefile)
-
 ## 7. The Code Guide
 
 This example demonstrates how a Linux kernel I2C driver is structured:
