@@ -6,8 +6,7 @@ tags: [projects, ssd1306, i2c]
 ---
 
 # SSD1306 I2C Linux Device Driver
-
-This project implements a Linux kernel driver for the SSD1306 OLED display using the I2C bus. It also includes helper code for display initialization and drawing, a device tree overlay for BeagleBone-style hardware, and a simple user-space application skeleton.
+This project implements a <u>Linux kernel driver for the SSD1306 OLED display using the I2C bus</u> and a small drawing helper library with fonts, primitives and buffering. It focuses on a tiny, structured user API so user-space programs can request drawing operations using `ioctl` without handling low-level bus transactions.
 
 ## 1. I2C Protocol Overview
 
@@ -277,14 +276,92 @@ Important targets:
 
 ## 6. User-space Example
 
-The repo includes `user_app.c` as a user-space skeleton.
 
-It attempts to:
+### IOCTL API and data model
+------------------------
+The driver accepts user-space requests via a single structured payload: `shape_type_t` (defined in `user_ioctl_interface.h`). The payload contains:
 
-- open `/dev/ssd1306_device`
-- poll for input
-- read data from the device
+- `gui_type` — enum selecting the operation: `BLANK_CIRCLE`, `FILLED_CIRCLE`, `BLANK_RECTANGLE`, `FILLED_RECTANGLE`, `TEXT`, `LOGO`.
+- `shape` — a union with one of:
+  - `t_text` — contains `text_cursor_x`, `text_cursor_y`, `text_size`, `text_color`, `buf_size`, `buffer[64]`.
+  - `t_rect` — contains rectangle coordinates, width/height and color.
+  - `t_logo` — contains `logo_cursor_x`, `logo_cursor_y`, `logo_size`, `logo_color`, `logo_buf_size`, `logo_buf[MAX_LOGO_SIZE]`.
 
+This keeps the API compact and explicit: user-space fills `shape_type_t` and sends it using `IOCTL_SET_VALUE`.
+
+IOCTL identifiers (example client)
+----------------------------------
+The example user app defines the ioctl numbers as follows (see `user_app.c`):
+
+```c
+#define MY_IOC_MAGIC                's'
+#define IOCTL_SET_VALUE             _IOW(MY_IOC_MAGIC, 1, shape_type_t)
+#define IOCTL_GET_VALUE             _IOR(MY_IOC_MAGIC, 2, shape_type_t)
+```
+
+### Example: drawing a logo or text:
+--------------------------------
+The repository contains `user_app.c` which demonstrates two simple operations:
+
+1) Prepare a `shape_type_t` with `gui_type = LOGO`, set cursor, color and copy a small bitmap into `logo_buf`, then call `ioctl(fd, IOCTL_SET_VALUE, &shape_type)`.
+
+2) After a delay, prepare `shape_type_t` with `gui_type = TEXT`, fill `text.buffer` and send another `IOCTL_SET_VALUE` to render text.
+
+Snippet (logo):
+
+```c
+shape_type_t shape;
+memset(&shape, 0, sizeof(shape_type_t));
+shape.gui_type = LOGO;
+shape.shape.logo.logo_cursor_x = 10;
+shape.shape.logo.logo_cursor_y = 0;
+shape.shape.logo.logo_color = WHITE;
+shape.shape.logo.logo_buf_size = sizeof(college_logo);
+memcpy(shape.shape.logo.logo_buf, college_logo, sizeof(college_logo));
+ioctl(fd, IOCTL_SET_VALUE, &shape);
+```
+
+Snippet (text):
+
+```c
+memset(&shape, 0, sizeof(shape_type_t));
+shape.gui_type = TEXT;
+shape.shape.text.text_size = 1;
+shape.shape.text.text_cursor_x = 1;
+shape.shape.text.text_cursor_y = 0;
+shape.shape.text.text_color = WHITE;
+shape.shape.text.buf_size = strlen(text_print);
+memcpy(shape.shape.text.buffer, text_print, strlen(text_print));
+ioctl(fd, IOCTL_SET_VALUE, &shape);
+```
+
+### Build & run (quick)
+-------------------
+The repository `Makefile` has targets for cross-compilation, host builds, DT compilation and small helpers. Example commands (run from repo root):
+
+```bash
+# Cross-compile for BeagleBone (default ARCH/CROSS_COMPILE in Makefile)
+make all
+
+# Compile device-tree overlay
+make dtc
+
+# Insert built module (adjust filename as needed)
+sudo insmod ssd1306.ko
+
+# Build example user app
+make user_app
+./user_app.o
+```
+
+### Files to inspect
+----------------
+- Driver entry & IOCTL handling: [main.c](main.c)
+- Drawing helpers & fonts: [ssd1306_helper.c](ssd1306_helper.c)
+- IOCTL payloads and types: [user_ioctl_interface.h](user_ioctl_interface.h)
+- Example client: [user_app.c](user_app.c)
+- Device tree overlay: [ssd1306.dts](ssd1306.dts)
+- Build helpers: [Makefile](Makefile)
 
 ## 7. The Code Guide
 
