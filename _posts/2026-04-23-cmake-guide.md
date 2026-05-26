@@ -6,7 +6,8 @@ tags: [cmake, Set-up]
 ---
 
 # Getting Started with CMake
-https://rajmahto9876.github.io/Blog/
+[CMake Org ](https://cmake.org/)
+
 ## Introduction
 
 When building C or C++ projects, managing source files, dependencies, compiler options, and cross-platform compatibility can quickly become difficult. This is where **CMake** becomes essential.
