@@ -15,7 +15,8 @@ Memory-mapped I/O (MMIO) is a method for accessing hardware registers by mapping
 - The `Makefile` is a kernel module build script with support for cross-compiling for ARM and building on the host.
 
 ---
-## Source Code: `main.c`
+## Source Code: `main.c` 
+[Github Code ](https://github.com/rajmahto9876/MMIO-INT-Driver)
 
 - `linux/module.h`: kernel module infrastructure.
 - `linux/io.h`: I/O memory mapping helpers, such as `ioremap`, `readl`, and `writel`.
