@@ -5,8 +5,6 @@ categories: [Projects]
 tags: [projects, mpu9250, spi]
 ---
 
-# MPU9250 SPI Kernel Driver for BeagleBone
-
 This repository contains a Linux kernel module that exposes an MPU9250 IMU over SPI as a character device. The driver hides low-level SPI register handling and provides a simple user-space API via `ioctl` and a well-defined `mpu9250_t` data structure.
 
 ## What this driver exposes
