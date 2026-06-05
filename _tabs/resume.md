@@ -10,13 +10,23 @@ order: 2
 
 # Professional Summary
 
-Embedded Software Engineer with 5+ years of experience in Embedded
-C/C++, firmware development, SoC bring-up, and embedded Linux systems
-for automotive and IoT platforms. Skilled in ARM Cortex-based systems,
-peripheral driver development, RTOS, and low-level debugging using GDB,
-JTAG, and Lauterbach Trace32. Experienced in SPI, I2C, UART, DMA, Linux
-kernel modules, hardware interfacing, and embedded system validation.
+Embedded Software Engineer with more than 5 years of experience in Embedded C development, micro-controller firmware, peripheral driver development, and board bring-up.
+ 
+Currently expanding expertise in Embedded Linux, Linux Kernel Internals, Device Drivers, Device Tree, QEMU, and kernel debugging.
+ 
+Hands-on experience with:
 
+- Embedded C
+- ARM Cortex-M
+- UART, SPI, I2C, Timer, PWM
+- RTOS concepts (Free RTOS)
+- Linux Kernel Modules
+- Character Device Drivers
+- Device Tree
+- QEMU
+- Git
+- JTAG Debugging, GDB, Valgrind and KGDB.
+ 
 # Education
 
 **National Institute of Technology, Warangal**\
@@ -92,6 +102,19 @@ analysis.
   activities.
 
 # Key Projects
+**Linux Device Driver on BeagleBone Black** &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Dec 2025 -- April 2026
+- Developed Linux Kernel Modules on BeagleBone Black to understand Linux driver architecture, kernel APIs, and ARM-based embedded systems.
+- Implemented MMIO-based GPIO drivers using ioremap(), readl(), and writel() for direct peripheral register access.
+- Developed interrupt-driven drivers using request_irq() and interrupt handlers, enabling asynchronous event processing from GPIO peripherals.
+- Created Device Tree overlays for custom hardware integration and peripheral configuration.
+- Developed SPI-based sensor drivers, handling device initialization, register configuration, and sensor data acquisition through the Linux SPI subsystem.
+- Implemented I2C-based OLED display drivers using the Linux I2C framework and verified communication through kernel-space applications.
+- Worked with platform drivers and Device Tree matching using compatible strings and probe/remove callbacks.
+- Performed kernel debugging using printk(), dmesg, GDB, and KGDB to analyze driver initialization and runtime issues.
+- Built and booted custom Linux kernels in QEMU to understand boot flow, kernel configuration, and driver integration.
+- Practiced board bring-up activities including Device Tree configuration, GPIO validation, interrupt verification, and peripheral testing.
+
+
 **Hardware Security Engine (HSE) -- Pre-Silicon Project** &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;May 2024 --
 June 2025
 
