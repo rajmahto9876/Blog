@@ -1,8 +1,8 @@
 ---
 title: ARM (Cortex-M) MSP vs PSP - Stack Pointers
-date: 2026-06-17
+date: 2026-06-18
 categories: [arm]
-tags: [arm, stack-pointer, psp, msp, cortex-m]
+tags: [arm, stack-pointer,cortex-m]
 ---
 
 One of the distinctive features of ARM Cortex-M architecture is the presence of two separate stack pointers: the **Main Stack Pointer (MSP)** and the **Process Stack Pointer (PSP)**. Unlike simpler processors with a single stack pointer, Cortex-M provides this dual-stack architecture to support advanced features like real-time operating systems (RTOS), privileged and unprivileged modes, and improved system robustness.
