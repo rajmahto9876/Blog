@@ -53,7 +53,7 @@ Because handlers are privileged, a common pattern is:
 
 At the instruction level read and write `CONTROL` with `MRS` / `MSR`. After writing `CONTROL`, execute an `ISB` to ensure the change takes effect before subsequent instructions:
 
-```asm
+```c
 		MRS R0, CONTROL    ; read CONTROL
 		ORR R0, R0, #2     ; set SPSEL -> use PSP in thread mode
 		MSR CONTROL, R0    ; write back
